@@ -122,9 +122,33 @@ a {
   margin-left: 50px;
 }
 
-@media (max-width: 768px) { /*breakpoint*/
+@media (max-width: 768px) {
+  /*breakpoint*/
   .container {
     flex-direction: column;
   }
+}
+
+.pointerTop {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  z-index: 9999;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  right: 25px;
+  cursor: pointer;
+  transition: all .7s ease-in-out;
+  overflow: hidden;
+  box-sizing: border-box;
+  font-weight: bold;
+  font-size: 25px;
+  color: #ffffff;
+  line-height: 175%;
+  text-indent: -99999px;
+  background-color: gray;
+  border-radius: 40px;
+  background-image: url(https://mjhstudios.s3.amazonaws.com/media/core/topArrow.png);
+  display: none;
 }
 
