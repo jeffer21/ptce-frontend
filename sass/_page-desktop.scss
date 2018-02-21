@@ -1,0 +1,121 @@
+
+
+.container{
+	width:90%;
+	display:flex;
+	justify-content:center;
+	margin: 0 auto;	
+}
+.left-column{
+	width:20%;
+}
+.left-column-title{
+	padding:10px 15px;
+	background-color: $column-title-bg;
+	color: $column-title-text;
+	margin-bottom:20px;
+}
+.section-box{
+	margin-bottom: 20px;
+	border: solid .5px $light-border;
+}
+#login{
+	form{
+		width:100%;
+
+		.input-username{
+			width:90%;
+			margin:0 5%;
+			padding: 10px;
+			border: $light-border solid .5px;
+			border-radius:5px 5px 0 0;
+
+		}
+		.input-password{
+			width:90%;
+			margin:0 5%;
+			padding: 10px;
+			border: $light-border solid .5px;
+			border-radius:0 0 5px 5px;
+		}
+		.sign-in{
+			color: $white;
+			background-color: $primary;
+			width:45%;
+			margin-left:5%;
+			padding:10px 0;
+
+		}
+
+		.sign-up{
+			color: $white;
+			background-color: $secondary;
+			width:45%;			
+			padding:10px 0;
+
+		}
+	}
+	.forgot-pw{
+		text-align: right;
+		margin-right:10%;
+		a{
+			color:$primary;
+			text-decoration: none;
+		}
+		a:hover{
+			color:$secondary;
+			text-decoration: underline;
+		}
+	}
+}
+.quicklinks{
+	ul{
+		list-style: none;
+		li{
+			margin-top:5px;
+		}
+		a {
+			color:$text;
+			text-decoration: none;
+		}
+		a:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+
+
+.main-body-title{
+	padding:10px 15px;
+	background-color: $column-title-bg;
+	color: $column-title-text;
+	margin-bottom:20px;
+}
+.activities-filter{
+	display:flex;
+	justify-content:space-between
+
+}
+.sort{
+	padding:5px;
+	border-radius: 3px;
+	border: $light-border solid .5px;
+	color: $dark-grey;
+}
+
+.sort-left{
+	width:40%;
+}
+.sort-right{
+	width:50%;
+	text-align: right;
+}
+.main-content{
+	width:60%;
+	padding:0 50px;
+}
+.right-column{
+	width:20%;
+	border: black solid 1px;
+}
