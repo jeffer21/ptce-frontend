@@ -30,9 +30,9 @@ gulp.task('default', function(){
 });
 
 gulp.task('html', function () {
-  gulp.src('*.html')
-    .pipe(gulp.dest('app'))
-    .pipe(livereload.reload());
+  gulp.src('./app/*.html')
+    .pipe(gulp.dest('app/'))
+    .pipe(livereload());
 });
 
 gulp.task('sass', function () {
@@ -59,7 +59,7 @@ gulp.task('watch', function(){
 
     gulp.watch('./sass/**/*.scss', ['sass']);
     gulp.watch('./lib/*.js', ['uglify']);
-    gulp.watch(['/app/*.html'], ['html']);
+    gulp.watch(['./app/*.html'], ['html']);
     gulp.watch(['style.css', 'js/*.js'], function (files){
         livereload.changed(files)
     });
