@@ -1,3 +1,99 @@
 body{
 	font-family: 'Roboto', serif;
+	font-size: 100%;
+}
+
+@media screen and (min-width: 980px) /* Desktop */ {
+
+h1{
+	font-size:1.9em;
+}
+
+h2{
+	font-size:1.7em;
+
+}
+
+h3{
+	font-size:1.5em;
+
+}
+
+h4{
+	font-size:1.3em;
+
+}
+
+p{
+	font-size:1em;
+}
+
+span{
+	font-size:1em;
+
+}
+
+.activities-text{
+	h3{
+		margin:5px 0;
+	}
+	p{
+		font-size:.9em
+	}
+}
+.activities-upc{
+	p{
+		font-size:.75em;
+		text-align: right;
+	}
+}
+
+}
+
+@media screen  and (max-width: 979px) /* Tablet */ {
+h1{
+	font-size:1.6em;
+}
+
+h2{
+	font-size:1.4em;
+
+}
+
+h3{
+	font-size:1.2em;
+
+}
+
+h4{
+	font-size:1em;
+
+}
+
+p{
+	font-size:.8em;
+}
+
+span{
+	font-size:.8em;
+
+}
+.activities-text{
+	h3{
+		margin:5px 0;
+	}
+	p{
+		margin-top: 0;
+		font-size:.8em
+	}
+}
+.activities-upc{
+	p{
+		font-size:.55em;
+		text-align: right;
+	}
+}
+}
+
+@media screen and (max-width: 500px) /* Mobile */ {
 }
