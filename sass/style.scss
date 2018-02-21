@@ -18,11 +18,11 @@ Tags: starter theme, light, sass, gulp, livereload
 
 
 /* Setup */
-@import "reset";
-@import "mixins";
-@import "variables";
+@import "color";
 @import "fonts";
 @import "globals";
+@import "page-desktop";
+
 
 
 /* WP parts */
