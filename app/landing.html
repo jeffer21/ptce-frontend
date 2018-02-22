@@ -26,19 +26,47 @@
 </head>
 
 <div class="container">
+    <div id="myModal" class="modal">
+
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>This webinar will focus on pulmonary arterial hypertension (PAH) as a disease state as well as treatment guidelines and goals, which require a
+                multidisciplinary approach from healthcare personnel. Health-system pharmacists’ involvement can enhance patient education and improve
+                medication use as patients with PAH commonly use multiple treatments for the disease including supportive therapy, which significantly increases
+                the chances of adverse effects and drug interactions. In addition, the options for treating symptoms of PAH have increased with several different
+                drug classes and delivery routes available. This activity will highlight the information on the various therapeutic options to keep hospital
+                pharmacists updated in order to provide the appropriate clinical guidance to the healthcare team.</p>
+        </div>
+
+    </div>
+
     <div class="main-content">
         <div id="landing-test">
             <div style=""><h1>Identifying Health-System Pharmacist's Role in Improving Pulmonary Arterial Hypertension and Transitions of Care</h1></div>
+        </div>
 
-        </div><br>
+        <button id="quiz-start" style="text-align: center; display:block;margin: 0 auto;" onclick="quiz();">Quiz Start</button>
 
         <div class="quiz-container">
-            <div id="quiz"></div>
+            <div id="question-container">
+                <div id="question">
+
+                </div>
+            </div>
+
+            <div id="info-container">
+                <div id="info"></div>
+
+            </div>
+
+            <div id="video-container">
+                <div id="video"></div>
+            </div>
+
+            <button id="Previous" style="float: left">Previous</button>
+            <button id="Next" style="float: right">Next</button>
+            <button id="submit" style="display: none">Submit</button>
         </div>
-        <button id="previous">Previous Question</button>
-        <button id="next">Next Question</button>
-        <button id="submit">Submit Quiz</button>
-        <div id="results"></div>
 
     </div>
 
