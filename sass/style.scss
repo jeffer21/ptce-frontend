@@ -22,7 +22,13 @@ Tags: starter theme, light, sass, gulp, livereload
 @import "fonts";
 @import "globals";
 @import "page-desktop";
+@import "page-laptop";
+@import "page-tablet";
+@import "page-mobile";
+@import "header-mobile";
+@import "header-tablet";
 @import "header-desktop";
+@import "header-laptop";
 
 
 

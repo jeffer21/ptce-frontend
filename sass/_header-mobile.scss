@@ -1,9 +1,8 @@
-@media screen and (min-width: 1800px){
+@media screen and (max-width: 600px){
 #global-nav {
   position: fixed;
   top: 0;
   z-index: 9999;
-  height: 150px;
   width: 100%;
   background: #324c5f;
   color: #fff;
@@ -66,16 +65,16 @@ hr{
 }
 .banner{
 	background-image:url('http://ptce.s3.amazonaws.com/_media/_image/full-banner.jpg');
-	background-position: right bottom;
-	height:420px;
+	background-position: center center;
+	height:150px;
 	-webkit-transition: all .5s;
 	transition: all .5s;
 	box-shadow:  0 4px 2px -2px $shadow;
 }
 .banner-text{
-	padding:70px;
-	margin-left:15%;
-	width:40%;
+	padding:20px;
+	margin-left:10%;
+	width:60%;
 	-webkit-transition: all .5s;
 	transition: all .5s;
 
@@ -83,7 +82,7 @@ hr{
 		color:$banner-h1;
 		padding:0;
 		margin:0;
-		font-size:2.2em;
+		font-size:1.2em;
 		font-weight:400;
 		-webkit-transition: all .5s;
 		transition: all .5s;
@@ -91,7 +90,7 @@ hr{
 	h2{
 		color:$banner-h2;
 		font-weight:300;
-		font-size:2em;
+		font-size:1em;
 		padding:0;
 		margin:0;
 		margin-bottom:5px;
@@ -104,8 +103,8 @@ hr{
 		font-weight:normal;
 		padding:0;
 		margin:0;
-		font-size: 1.8em;
-		margin-bottom:5px;
+		font-size: .8em;
+		margin-bottom:0px;
 		-webkit-transition: all .5s;
 		transition: all .5s;
 	}
@@ -123,8 +122,8 @@ hr{
 		transition: all .5s;
 		color:$banner-p;
 		font-family:serif;
-		font-size: 1.5em;
-		line-height: 1.5em;
+		font-size: .8em;
+		line-height: 1.2em;
 
 	}
 }
@@ -167,13 +166,14 @@ hr{
 
 .banner{
 	background-image:url('http://ptce.s3.amazonaws.com/_media/_image/scroll-banner.jpg');
-	height:200px;
+	height:100px;
+	background-position: center center;
 	box-shadow:  0 4px 2px -2px $shadow;
 
 }
 .banner-text{
-	padding:30px;
-	margin-left:15%;
+	padding:15px;
+	margin-left:10%;
 	width:60%;
 	h1{
 		color:$banner-h1;
