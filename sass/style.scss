@@ -22,11 +22,10 @@ Tags: starter theme, light, sass, gulp, livereload
 @import "fonts";
 @import "globals";
 @import "page-desktop";
+@import "header-desktop";
 
 
 
-/* WP parts */
-@import "header";
 @import "homepage";
 @import "sidebar";
 @import "footer";
