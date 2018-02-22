@@ -1,10 +1,12 @@
-
-
+#page{
+	margin-top:500px;
+}
 .container{
 	width:90%;
 	display:flex;
 	justify-content:center;
-	margin: 0 auto;	
+	margin: 0 auto;
+	margin-top: 20px; 
 }
 .left-column{
 	width:20%;
@@ -16,28 +18,30 @@
 	margin-bottom:20px;
 }
 .section-box{
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	border: solid .5px $light-border;
+	background-color:$white;
 }
 #login{
+	padding-bottom:20px;
 	form{
 		width:100%;
-
+		
 		.input-username{
-			width:90%;
+			width:85%;
 			margin:0 5%;
-			padding: 10px;
+			padding:10px 2.5%;
 			border: $light-border solid .5px;
 			border-radius:5px 5px 0 0;
-
 		}
 		.input-password{
-			width:90%;
+			width:85%;
 			margin:0 5%;
-			padding: 10px;
+			padding: 10px 2.5%;
 			border: $light-border solid .5px;
 			border-radius:0 0 5px 5px;
 		}
+
 		.sign-in{
 			color: $white;
 			background-color: $primary;
@@ -57,10 +61,11 @@
 	}
 	.forgot-pw{
 		text-align: right;
-		margin-right:10%;
+		margin-right:5%;
 		a{
 			color:$primary;
 			text-decoration: none;
+			font-size: .75em;
 		}
 		a:hover{
 			color:$secondary;
@@ -90,13 +95,14 @@
 	padding:10px 15px;
 	background-color: $column-title-bg;
 	color: $column-title-text;
-	margin-bottom:20px;
+	margin-bottom:0px;
 }
 .activities-filter{
 	display:flex;
 	justify-content:space-between;
 	border: $light-border solid .5px;
 	padding: 4px 10px;
+	background-color:$white;
 }
 .sort{
 	padding:5px;
@@ -118,7 +124,8 @@
 	display:flex;
 	justify-content: space-between;
 	border:solid .5px $light-border;
-	margin-top: 20px;
+	margin-top: 10px;
+	background-color:$white;
 }
 
 .activities-img{
