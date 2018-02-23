@@ -72,9 +72,9 @@ hr{
 	box-shadow:  0 4px 2px -2px $shadow;
 }
 .banner-text{
-	padding:20px;
-	margin-left:10%;
-	width:60%;
+	padding:20px 10px 0 0;
+	margin-left:7%;
+	width:70%;
 	-webkit-transition: all .5s;
 	transition: all .5s;
 
@@ -172,21 +172,21 @@ hr{
 
 }
 .banner-text{
-	padding:15px;
-	margin-left:10%;
+	padding:10px 5px 0 0;
+	margin-left:5%;
 	width:60%;
 	h1{
 		color:$banner-h1;
 		padding:0;
 		margin:0;
-		font-size:1.8em;
+		font-size:1.6em;
 		font-weight:400;
 
 	}
 	h2{
 		color:$banner-h2;
 		font-weight:300;
-		font-size:1.6em;
+		font-size:1.4em;
 		padding:0;
 		margin:0;
 		margin-bottom:5px;
@@ -197,8 +197,8 @@ hr{
 		font-weight:normal;
 		padding:0;
 		margin:0;
-		font-size: 1.4em;
-		margin-bottom:5px;
+		font-size: 1.2em;
+		margin-bottom:0px;
 	}
 	hr{
 		background-color:$hr-line;

@@ -47,7 +47,7 @@ hr{
 	    color:$text;
 		li{
 			float:left;
-			margin-left:40px;
+			margin-left:0px;
 			list-style:none;
 			-webkit-transition: all .5s;
 		    transition: all .5s;
@@ -73,8 +73,8 @@ hr{
 }
 .banner-text{
 	padding:20px;
-	margin-left:10%;
-	width:60%;
+	margin-left:2%;
+	width:90%;
 	-webkit-transition: all .5s;
 	transition: all .5s;
 
@@ -157,7 +157,7 @@ hr{
 		display:inline;
 		li{
 			float:left;
-			margin-left:40px;
+			margin-left:20px;
 			list-style:none;
 			color:$text
 		}
@@ -172,21 +172,21 @@ hr{
 
 }
 .banner-text{
-	padding:15px;
+	padding:10px 5px 0 0;
 	margin-left:10%;
-	width:60%;
+	width:80%;
 	h1{
 		color:$banner-h1;
 		padding:0;
 		margin:0;
-		font-size:1.8em;
+		font-size:1.0em;
 		font-weight:400;
 
 	}
 	h2{
 		color:$banner-h2;
 		font-weight:300;
-		font-size:1.6em;
+		font-size:.8em;
 		padding:0;
 		margin:0;
 		margin-bottom:5px;
@@ -197,8 +197,8 @@ hr{
 		font-weight:normal;
 		padding:0;
 		margin:0;
-		font-size: 1.4em;
-		margin-bottom:5px;
+		font-size: .6em;
+		margin-bottom:0px;
 	}
 	hr{
 		background-color:$hr-line;
@@ -210,8 +210,9 @@ hr{
 	p{
 		color:$banner-p;
 		font-family:serif;
-		font-size: 1em;
+		font-size: .6em;
 		line-height: 1.2em;
+		margin-top: 15px;
 
 	}
 }
