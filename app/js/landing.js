@@ -64,7 +64,7 @@ function quiz() {
 }
 
 function next() {
-    var chosen =[]; Test
+    var chosen =[];
 }
 
 //Modal before quiz
