@@ -1,9 +1,8 @@
-@media screen and (min-width: 1800px){
+@media screen and (min-width: 600px) and (max-width: 1064px){
 #global-nav {
   position: fixed;
   top: 0;
   z-index: 9999;
-  height: 150px;
   width: 100%;
   background: #324c5f;
   color: #fff;
@@ -66,16 +65,16 @@ hr{
 }
 .banner{
 	background-image:url('http://ptce.s3.amazonaws.com/_media/_image/full-banner.jpg');
-	background-position: right bottom;
-	height:420px;
+	background-position: center center;
+	height:220px;
 	-webkit-transition: all .5s;
 	transition: all .5s;
 	box-shadow:  0 4px 2px -2px $shadow;
 }
 .banner-text{
-	padding:70px;
-	margin-left:15%;
-	width:40%;
+	padding:20px;
+	margin-left:10%;
+	width:60%;
 	-webkit-transition: all .5s;
 	transition: all .5s;
 
@@ -167,13 +166,14 @@ hr{
 
 .banner{
 	background-image:url('http://ptce.s3.amazonaws.com/_media/_image/scroll-banner.jpg');
-	height:200px;
+	height:150px;
+	background-position: right bottom;
 	box-shadow:  0 4px 2px -2px $shadow;
 
 }
 .banner-text{
-	padding:30px;
-	margin-left:15%;
+	padding:15px;
+	margin-left:10%;
 	width:60%;
 	h1{
 		color:$banner-h1;
