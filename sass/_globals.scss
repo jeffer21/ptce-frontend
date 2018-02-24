@@ -10,6 +10,12 @@ body{
   margin:0;
   background-color: $body;
 }
+.hidden{
+	position:fixed;
+	background-color: #000;
+	left:-100%;
+	display:none;
+}
 
 // body {
 //   font-family: 'Roboto', sans-serif;
