@@ -35,7 +35,19 @@ hr{
 	    transition: all .5s;
 	}
 }
-.nav-links{
+#mobile-menu{
+	position:fixed;
+	width:100%;
+	top:40px;
+	left:-100%;
+	-webkit-transition: all 1s;
+    transition: all 1s;
+    background-color:$lighter-grey;
+    height: 100vh;
+    overflow: scroll;
+
+}
+.nav-links-mobile{
 	display:flex;
 	align-items:center;
 	-webkit-transition: all .5s;
@@ -53,6 +65,9 @@ hr{
 		    transition: all .5s;
 		}
 	}
+}
+.nav-links{
+	display:none;
 }
 .search{
 	margin-left:40px;
@@ -82,7 +97,7 @@ hr{
 		color:$banner-h1;
 		padding:0;
 		margin:0;
-		font-size:1.2em;
+		font-size:1.4em;
 		font-weight:400;
 		-webkit-transition: all .5s;
 		transition: all .5s;
@@ -90,7 +105,7 @@ hr{
 	h2{
 		color:$banner-h2;
 		font-weight:300;
-		font-size:1em;
+		font-size:1.2em;
 		padding:0;
 		margin:0;
 		margin-bottom:5px;
@@ -103,7 +118,7 @@ hr{
 		font-weight:normal;
 		padding:0;
 		margin:0;
-		font-size: .8em;
+		font-size: 1em;
 		margin-bottom:0px;
 		-webkit-transition: all .5s;
 		transition: all .5s;
@@ -114,7 +129,7 @@ hr{
 		background-color:$hr-line;
 		border:none;
 		height:3px;
-		width:12%;
+		width:30%;
 		float:left;
 	}
 	p{
@@ -150,19 +165,7 @@ hr{
 		width:60%;
 	}
 }
-.nav-links{
-	display:flex;
-	align-items:center;
-	ul{
-		display:inline;
-		li{
-			float:left;
-			margin-left:20px;
-			list-style:none;
-			color:$text
-		}
-	}
-}
+
 
 .banner{
 	background-image:url('http://ptce.s3.amazonaws.com/_media/_image/scroll-banner.jpg');
