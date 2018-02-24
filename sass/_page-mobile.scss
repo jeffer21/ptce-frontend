@@ -3,13 +3,15 @@ body{
 	font-size:75%;
 }
 #page{
-	margin-top:290px;
+	margin-top:240px;
 }
 .container{
 	width:100%;
 	margin: 0 auto;
 	margin-top: 20px;
 	flex:2 0px;
+	display: flex;
+	flex-direction: column;
 
 
 
@@ -18,6 +20,7 @@ body{
 	order:3;
 	width:25%;
 	float:left;
+	display:none;
 }
 .left-column-title{
 	padding:10px 15px;
@@ -163,15 +166,15 @@ body{
 
 
 .main-content{
-	order:2;
-	width:70%;
+	order:1;
+	width:100%;
 	padding:0 2%;
 	float:right;
 
 }
 .right-column{
 	order:1;
-	width:25%;
+	width:100%;
 	float:left;
 	img{
 		width:100%;
