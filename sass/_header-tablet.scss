@@ -46,7 +46,11 @@
 	}
 }
 #mobile-menu{
-	display:none;
+	margin-right: 10px;
+	i {
+		font-size:2em;
+		color:$text;
+	}
 }
 .mobile-search{
 	padding:5px 10px;
@@ -74,7 +78,7 @@
 nav{
 	display: flex;
 	justify-content:space-between;
-	width:100%;
+
 	align-items:center;
 	padding:10px 5% 0px;
 	background-color: $white;
@@ -192,89 +196,89 @@ hr{
 
 
 .scrolled-nav{
-nav{
-	display: flex;
-	justify-content:space-between;
-	width:90%;
-	align-items:center;
-	padding:10px 5% 0px;
-	background-color: $white;
-}
-hr{
-	background-color:$light-border;
-	border:none;
-	height:2px;
-	margin:0;
-}
-.logo{
-	img{
-		width:60%;
-	}
-}
-.nav-links{
-	display:flex;
-	align-items:center;
-	ul{
-		display:inline;
-		li{
-			float:left;
-			margin-left:40px;
-			list-style:none;
-			color:$text
-		}
-	}
-}
-
-.banner{
-	background-image:url('http://ptce.s3.amazonaws.com/_media/_image/scroll-banner.jpg');
-	height:150px;
-	background-position: right bottom;
-	box-shadow:  0 4px 2px -2px $shadow;
-
-}
-.banner-text{
-	padding:10px 5px 0 0;
-	margin-left:5%;
-	width:60%;
-	h1{
-		color:$banner-h1;
-		padding:0;
-		margin:0;
-		font-size:1.6em;
-		font-weight:400;
-
-	}
-	h2{
-		color:$banner-h2;
-		font-weight:300;
-		font-size:1.4em;
-		padding:0;
-		margin:0;
-		margin-bottom:5px;
-	}
-	h3{
-		color:$banner-h3;
-		font-family:serif;
-		font-weight:normal;
-		padding:0;
-		margin:0;
-		font-size: 1.2em;
-		margin-bottom:0px;
+	nav{
+		display: flex;
+		justify-content:space-between;
+		width:90%;
+		align-items:center;
+		padding:10px 5% 0px;
+		background-color: $white;
 	}
 	hr{
-		background-color:$hr-line;
+		background-color:$light-border;
 		border:none;
 		height:2px;
-		width:12%;
-		float:left;
+		margin:0;
 	}
-	p{
-		color:$banner-p;
-		font-family:serif;
-		font-size: 1em;
-		line-height: 1.2em;
+	.logo{
+		img{
+			width:60%;
+		}
+	}
+	.nav-links{
+		display:flex;
+		align-items:center;
+		ul{
+			display:inline;
+			li{
+				float:left;
+				margin-left:40px;
+				list-style:none;
+				color:$text
+			}
+		}
+	}
+
+	.banner{
+		background-image:url('http://ptce.s3.amazonaws.com/_media/_image/scroll-banner.jpg');
+		height:150px;
+		background-position: right bottom;
+		box-shadow:  0 4px 2px -2px $shadow;
 
 	}
-}
+	.banner-text{
+		padding:10px 5px 0 0;
+		margin-left:5%;
+		width:60%;
+		h1{
+			color:$banner-h1;
+			padding:0;
+			margin:0;
+			font-size:1.6em;
+			font-weight:400;
+
+		}
+		h2{
+			color:$banner-h2;
+			font-weight:300;
+			font-size:1.4em;
+			padding:0;
+			margin:0;
+			margin-bottom:5px;
+		}
+		h3{
+			color:$banner-h3;
+			font-family:serif;
+			font-weight:normal;
+			padding:0;
+			margin:0;
+			font-size: 1.2em;
+			margin-bottom:0px;
+		}
+		hr{
+			background-color:$hr-line;
+			border:none;
+			height:2px;
+			width:12%;
+			float:left;
+		}
+		p{
+			color:$banner-p;
+			font-family:serif;
+			font-size: 1em;
+			line-height: 1.2em;
+
+		}
+	}
 }
 }

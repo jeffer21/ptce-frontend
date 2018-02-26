@@ -1,4 +1,4 @@
-@media screen and (min-width: 600px) and (max-width: 1064px){
+@media screen and (min-width: 601px) and (max-width: 1064px){
 body{
 	font-size:75%;
 }
@@ -9,15 +9,12 @@ body{
 	width:100%;
 	margin: 0 auto;
 	margin-top: 20px;
-	flex:2 0px;
-
-
 
 }
 .left-column{
-	order:3;
 	width:25%;
 	float:left;
+	display:none;
 }
 .left-column-title{
 	padding:10px 15px;
@@ -162,16 +159,14 @@ body{
 
 
 .main-content{
-	order:2;
 	width:70%;
 	padding:0 2%;
-	float:right;
+	float:left;
 
 }
 .right-column{
-	order:1;
 	width:25%;
-	float:left;
+	float:right;
 	img{
 		width:100%;
 		margin-bottom:20px;
@@ -179,7 +174,7 @@ body{
 }
 
 .main-content-2col {
-    width:80%;
-    padding:0 50px;
+    width:95%;
+    padding:0 10px;
 }
 }
