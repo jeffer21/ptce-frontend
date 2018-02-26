@@ -1,5 +1,7 @@
 /* Global Start */
-
+.whitebg{
+	background-color: $white;
+}
 .btn{
   border:0px;
   border-radius: 5px;
@@ -16,7 +18,26 @@ body{
 	left:-100%;
 	display:none;
 }
+.indent-only{
+	list-style: none;
+}
 
+@media screen and (max-width:1064px){
+	
+.non-mobile{
+	display:none !important;
+}
+.mobile-search-container{
+	display:flex;
+
+}
+
+}
+@media screen and (min-width:1065px){
+.mobile{
+	display:none !important;
+}
+}
 // body {
 //   font-family: 'Roboto', sans-serif;
 //   font-size: 14px;
