@@ -2,16 +2,23 @@ function mobileNav(){
 	var x = document.getElementById('mobile-menu').style.left;
 	if (x === "" || x ==="-100%"){
 		document.getElementById('mobile-menu').style.left = 0;
-		document.getElementById('page').style.display = "none";
+
 	}else{
 		document.getElementById('mobile-menu').style.left = "-100%";
-		document.getElementById('page').style.display = "block";
+
 	}
 	
 
 }
 function mobileSearch(){
 	console.log('ready');
+	var x = document.getElementById('mobile-search').style.display;
+	console.log(x)
+	if (x === "" || x ==="none"){
+		document.getElementById('mobile-search').style.display = "block";
+	}else{
+		document.getElementById('mobile-search').style.display = "none";
+	}
 }
 
 	// console.log('start test');
