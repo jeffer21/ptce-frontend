@@ -1,5 +1,7 @@
 /* Global Start */
-
+.whitebg{
+	background-color: $white;
+}
 .btn{
   border:0px;
   border-radius: 5px;
@@ -15,6 +17,9 @@ body{
 	background-color: #000;
 	left:-100%;
 	display:none;
+}
+.indent-only{
+	list-style: none;
 }
 
 @media screen and (max-width:800px){
