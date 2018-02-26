@@ -26,7 +26,7 @@
 </head>
 <body>
 	<header id="global-nav">
-		<div id="mobile-menu">
+		<div id="mobile-menu" class="mobile">
 			<div id="quicklinks" class="section-box quicklinks">
 			<div class="mobile-menu-title">
 				<div class="mobile-title">Menu</div>
@@ -75,14 +75,16 @@
 				<li><a href="#">Depression</a></li>
 			</ul>
 			</div>
-
 		</div>
 		<nav>
-			<div class="mobile-menu" onclick="mobileNav()">
-				<i class="fas fa-bars"></i>
+			<div class="mobile-nav mobile">
+				<div class="mobile-menu" onclick="mobileNav()">
+					<i class="fas fa-bars"></i>
+				</div>
+				<div class="logo"><img src="http://ptce.s3.amazonaws.com/_media/_image/ptce-logo.png" alt=""></div>
 			</div>
-			<div class="logo"><img src="http://ptce.s3.amazonaws.com/_media/_image/ptce-logo.png" alt=""></div>
-			<div class="nav-links">
+			<div class="logo non-mobile"><img src="http://ptce.s3.amazonaws.com/_media/_image/ptce-logo.png" alt=""></div>
+			<div class="nav-links non-mobile">
 				<ul>
 					<li>NEWS</li>
 					<li>EDUCATION</li>
@@ -90,8 +92,13 @@
 				</ul>
 				<input class="search" type="text" placeholder="Search">
 			</div>
-			<div class="nav-links-mobile" onclick="mobileSearch()">
-				<i class="fas fa-search"></i>
+			<div class="mobile-search-container">
+				<div class="nav-links-mobile mobile" onclick="mobileSearch()">
+					<i class="fas fa-search"></i>
+				</div>
+				<div id="mobile-search" class="mobile">
+					<input class="mobile-search" type="text" placeholder="Search">
+				</div>
 			</div>
 		</nav>
 		<hr>

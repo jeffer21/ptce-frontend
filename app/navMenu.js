@@ -12,6 +12,13 @@ function mobileNav(){
 }
 function mobileSearch(){
 	console.log('ready');
+	var x = document.getElementById('mobile-search').style.display;
+	console.log(x)
+	if (x === "" || x ==="none"){
+		document.getElementById('mobile-search').style.display = "block";
+	}else{
+		document.getElementById('mobile-search').style.display = "none";
+	}
 }
 
 	// console.log('start test');
