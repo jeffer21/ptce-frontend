@@ -39,12 +39,12 @@ const myQuestions = [
     {
         page: 2,
         questionType: "video",
-        dataLink: "https://www.youtube.com/watch?v=V2hlQkVJZhE"
+        dataLink: "https://www.youtube.com/embed/V2hlQkVJZhE"
     },
     {
         page: 3,
         questionType: "info",
-        data: "LOREM IPSUM!"
+        data: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi odio elit, congue quis leo sed, sodales pharetra leo. Maecenas commodo eu mi vel vehicula. Praesent lacinia ipsum odio. Donec quis hendrerit dolor. Vivamus quam nisl, dictum nec nulla quis, facilisis tempus eros. Quisque velit nulla, mattis sollicitudin velit at, varius viverra lorem. Nulla facilisi. Mauris interdum venenatis ligula et fringilla. Phasellus efficitur purus risus, faucibus vulputate odio rutrum et. Maecenas at placerat est. Fusce felis metus, imperdiet nec massa sagittis, viverra placerat orci. Pellentesque pellentesque tincidunt turpis, vel dictum nisi condimentum ac. Nunc egestas ante nunc, ac vulputate leo venenatis et. Etiam ut nisi pretium, vehicula erat vitae, aliquet est. Vestibulum rutrum suscipit fermentum."
     }
 
 ];
@@ -76,7 +76,7 @@ function quiz() {
 
         if(currentQuizPage == 1) {
             for (var y = 0; y <= countP1; y++) {
-                document.getElementById("info-container").style.display = "none";
+                document.getElementById("info-container").style.visibility = "hidden";
                 document.getElementById("video-container").style.visibility = "hidden";
 
                 var y = myQuestions[x].question.toString();
@@ -87,11 +87,18 @@ function quiz() {
             }
         } else if (currentQuizPage == 2) {
             //STILL NEEDS WORK AS OF 2/23/2018
-            document.getElementById("info-container").style.display = "none";
-            document.getElementById("question-container").style.display = "none";
+            document.getElementById("info-container").style.display= "none";
+            document.getElementById("question-container").style.display= "none";
             document.getElementById("video-container").style.visibility = "visible";
 
-            document.getElementById("video-container").innerHTML += '<div> <iframe src="' + myQuestions[3].dataLink + '"></iframe> </div>';
+            document.getElementById("video-container").innerHTML += '<div> <iframe width="100%" height="500px" src="' + myQuestions[3].dataLink + '"></iframe> <br> </div>';
+            continue;
+        } else if (currentQuizPage == 3) {
+            document.getElementById("info-container").style.visibility = "visible";
+            document.getElementById("question-container").style.display= "none";
+            document.getElementById("video-container").style.display= "none";
+
+            document.getElementById("info-container").innerHTML += '<div> <p>' + myQuestions[4].data + '</p></div>';
         }
 
         //if (myQuestions[x].questionType == "question") {
