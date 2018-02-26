@@ -57,6 +57,13 @@ function quiz() {
     var countP2 = 0;
     var countP3 = 0;
     var whereisvideo;
+    var whatislastpage;
+
+    for(var lp = 0; lp < myQuestions.length;lp++) {
+        if(myQuestions[lp].page == 3) {
+            whatislastpage = 3;
+        }
+    }
 
     for(var x = 0; x < myQuestions.length; x++) {
         console.log("This is the question type: " + myQuestions[x].questionType + " and this is the number in the array: " + x);
@@ -91,14 +98,26 @@ function quiz() {
             document.getElementById("question-container").style.display= "none";
             document.getElementById("video-container").style.visibility = "visible";
 
-            document.getElementById("video-container").innerHTML += '<div> <iframe width="100%" height="500px" src="' + myQuestions[3].dataLink + '"></iframe> <br> </div>';
-            continue;
+            document.getElementById("video-container").innerHTML += '<div> <iframe width="100%" height="500px" src="' + myQuestions[3].dataLink + '"></iframe> </div><br>';
+            break;
+
         } else if (currentQuizPage == 3) {
+            document.getElementById("info-container").style.display = "block";
             document.getElementById("info-container").style.visibility = "visible";
             document.getElementById("question-container").style.display= "none";
             document.getElementById("video-container").style.display= "none";
 
-            document.getElementById("info-container").innerHTML += '<div> <p>' + myQuestions[4].data + '</p></div>';
+            for(var z = 0; z < whereisvideo; z++) {
+                document.getElementById("info-container").innerHTML += '<div> <p>' + myQuestions[4].data + '</p></div> <br>';
+            }
+
+            if(whatislastpage == currentQuizPage) {
+                document.getElementById('Previous').style.visibility = 'visible';
+                document.getElementById('landing-Submit').style.visibility = 'visible';
+                document.getElementById('landing-Submit').style.float = 'right';
+                document.getElementById('Previous').style.float = 'left';
+                document.getElementById('Next').style.display = 'none';
+            }
         }
 
         //if (myQuestions[x].questionType == "question") {
@@ -125,5 +144,13 @@ function activityStart () {
     document.getElementById("myModal").style.display = "none";
     document.getElementById('Next').style.visibility = 'visible';
     quiz();
+}
+
+function activityEnd () {
+    window.location.replace("results.html");
+
+    setTimeout(function(){
+        window.location.replace('index.html');
+    }, 3000);
 }
 
