@@ -177,78 +177,78 @@ hr{
 
 
 .scrolled-nav{
-nav{
-	display: flex;
-	justify-content:space-between;
-	width:90%;
-	align-items:center;
-	padding:10px 5% 0px;
-	background-color: $white;
-}
-hr{
-	background-color:$light-border;
-	border:none;
-	height:2px;
-	margin:0;
-}
-.logo{
-	img{
-		width:60%;
-	}
-}
-
-
-.banner{
-	background-image:url('http://ptce.s3.amazonaws.com/_media/_image/scroll-banner.jpg');
-	height:100px;
-	background-position: center center;
-	box-shadow:  0 4px 2px -2px $shadow;
-
-}
-.banner-text{
-	padding:10px 5px 0 0;
-	margin-left:10%;
-	width:80%;
-	h1{
-		color:$banner-h1;
-		padding:0;
-		margin:0;
-		font-size:1.0em;
-		font-weight:400;
-
-	}
-	h2{
-		color:$banner-h2;
-		font-weight:300;
-		font-size:.8em;
-		padding:0;
-		margin:0;
-		margin-bottom:5px;
-	}
-	h3{
-		color:$banner-h3;
-		font-family:serif;
-		font-weight:normal;
-		padding:0;
-		margin:0;
-		font-size: .6em;
-		margin-bottom:0px;
+	nav{
+		display: flex;
+		justify-content:space-between;
+		width:90%;
+		align-items:center;
+		padding:10px 5% 0px;
+		background-color: $white;
 	}
 	hr{
-		background-color:$hr-line;
+		background-color:$light-border;
 		border:none;
 		height:2px;
-		width:12%;
-		float:left;
+		margin:0;
 	}
-	p{
-		color:$banner-p;
-		font-family:serif;
-		font-size: .6em;
-		line-height: 1.2em;
-		margin-top: 15px;
+	.logo{
+		img{
+			width:60%;
+		}
+	}
+
+
+	.banner{
+		background-image:url('http://ptce.s3.amazonaws.com/_media/_image/scroll-banner.jpg');
+		height:100px;
+		background-position: center center;
+		box-shadow:  0 4px 2px -2px $shadow;
 
 	}
-}
+	.banner-text{
+		padding:10px 5px 0 0;
+		margin-left:10%;
+		width:80%;
+		h1{
+			color:$banner-h1;
+			padding:0;
+			margin:0;
+			font-size:1.0em;
+			font-weight:400;
+
+		}
+		h2{
+			color:$banner-h2;
+			font-weight:300;
+			font-size:.8em;
+			padding:0;
+			margin:0;
+			margin-bottom:5px;
+		}
+		h3{
+			color:$banner-h3;
+			font-family:serif;
+			font-weight:normal;
+			padding:0;
+			margin:0;
+			font-size: .6em;
+			margin-bottom:0px;
+		}
+		hr{
+			background-color:$hr-line;
+			border:none;
+			height:2px;
+			width:12%;
+			float:left;
+		}
+		p{
+			color:$banner-p;
+			font-family:serif;
+			font-size: .6em;
+			line-height: 1.2em;
+			margin-top: 15px;
+
+		}
+	}
 }
 }
