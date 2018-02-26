@@ -3,7 +3,7 @@ body{
 	font-size:75%;
 }
 #page{
-	margin-top:240px;
+	margin-top:220px;
 }
 .container{
 	width:100%;
@@ -12,9 +12,12 @@ body{
 	flex:2 0px;
 	display: flex;
 	flex-direction: column;
-
-
-
+}
+.mobile-menu-title{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border:#ebebeb solid 0.5px;
 }
 .left-column{
 	order:3;
@@ -27,6 +30,12 @@ body{
 	background-color: $column-title-bg;
 	color: $column-title-text;
 	margin-bottom:20px;
+}
+.mobile-title{
+	padding:10px 15px;
+	background-color: $column-title-bg;
+	color: $column-title-text;
+
 }
 .section-box{
 	margin-bottom: 10px;
@@ -112,7 +121,7 @@ body{
 	display:flex;
 	justify-content:space-between;
 	border: $light-border solid .5px;
-	padding: 4px 10px;
+	padding: 10px 10px;
 	background-color:$white;
 }
 .sort{
@@ -124,11 +133,14 @@ body{
 }
 
 .sort-left{
-	width:40%;
+	width:60%;
 }
 .sort-right{
-	width:50%;
+	width:40%;
 	text-align: right;
+	span{
+		display:none;
+	}
 }
 
 .activities-card{
@@ -137,10 +149,11 @@ body{
 	border:solid .5px $light-border;
 	margin-top: 20px;
 	background-color:$white;
+	flex-direction:column;
 }
 
 .activities-img{
-	width:25%
+	width:100%
 }
 
 .activities-img img{
@@ -148,17 +161,24 @@ body{
 }
 
 .activities-description{
-	margin-left:20px;
-	padding-right:30px;
 	display: flex;
 	flex-direction: column;
 	justify-content:space-between;
-	width:75%;
+	width:100%;
 
 }
 .activities-text{
+	padding:0px 10px;
+	p{
+		font-size: 1em;
+	}
 }
 .activities-upc{
+	width:100%;
+	p{
+		padding:0 10px;
+		font-size: .8em;
+	}
 }
 
 
@@ -168,7 +188,6 @@ body{
 .main-content{
 	order:1;
 	width:100%;
-	padding:0 2%;
 	float:right;
 
 }
