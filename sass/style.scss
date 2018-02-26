@@ -38,6 +38,10 @@ Tags: starter theme, light, sass, gulp, livereload
 @import "event";
 @import "landing";
 
+/* Event Registration */
 
-
+@import "events-desktop";
+@import "events-laptop";
+@import "events-tablet";
+@import "events-mobile";
 
