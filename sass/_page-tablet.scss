@@ -21,6 +21,7 @@ body{
 	background-color: $column-title-bg;
 	color: $column-title-text;
 	margin-bottom:20px;
+	border-bottom: $light-border solid 2px;
 }
 .section-box{
 	margin-bottom: 10px;
