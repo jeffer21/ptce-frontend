@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!--<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no;">-->
+    <meta name="HandheldFriendly" content="True">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- js -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script async src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="nav.js"></script>
+    <script src="navMenu.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" media="screen, print" href="style.css"/>
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/_media/_image/favicon.ico" type="image/x-icon" />
+
+</head>
+<body>
+    <header id="global-nav">
+        <div id="mobile-menu" class="mobile">
+            <div id="quicklinks" class="section-box quicklinks">
+            <div class="mobile-menu-title">
+                <div class="mobile-title">Menu</div>
+                <div class="mobile-menu-close" onclick="mobileNav()">close</div>
+            </div>
+                <ul>
+                    <li><a href="#">NEWS</a></li>
+                    <li><a href="event.html">EDUCATION</a></li>
+                    <li><a href="landing.html">CONDITIONS</a></li>
+                </ul>
+            </div>
+            <div id="quicklinks" class="section-box quicklinks">
+            <div class="left-column-title">Quick Links</div>
+            <ul>
+                <li><a href="#">Videos</a></li>
+                <li><a href="#">Clinical Resources</a></li>
+                <li><a href="#">Conference Coverage</a></li>
+                <li><a href="#">Contributors</a></li>
+            </ul>
+            </div><br>
+
+            <div id="quicklinks" class="section-box quicklinks">
+            <div class="left-column-title">Quick Links</div>
+            <ul>
+                <li><a href="#">Videos</a></li>
+                <li><a href="#">Clinical Resources</a></li>
+                <li><a href="#">Conference Coverage</a></li>
+                <li><a href="#">Contributors</a></li>
+            </ul>
+            </div><br>
+
+            <div id="topics" class="section-box quicklinks">
+            <div class="left-column-title">Topic</div>
+            <ul>
+                <li><a href="#">Allergies</a></li>
+                <li><a href="#">Anaphylaxis</a></li>
+                <li><a href="#">Asthma</a></li>
+                <li><a href="#">Blood Disorders</a></li>
+                <li><a href="#">Cardiology</a></li>
+                <li><a href="#">Cold and Flu</a></li>
+                <li><a href="#">COPD</a></li>
+                <li><a href="#">Dermatology</a></li>
+                <li><a href="#">Diabetes</a></li>
+                <li><a href="#">Depression</a></li>
+            </ul>
+            </div>
+        </div>
+        <nav>
+            <div class="mobile-nav mobile">
+                <div class="mobile-menu" onclick="mobileNav()">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="logo"><img src="http://ptce.s3.amazonaws.com/_media/_image/ptce-logo.png" alt=""></div>
+            </div>
+            <div class="logo non-mobile"><img src="http://ptce.s3.amazonaws.com/_media/_image/ptce-logo.png" alt=""></div>
+            <div class="mobile-search-container">
+                <div class="nav-links-mobile mobile" onclick="mobileSearch()">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div id="mobile-search" class="mobile">
+                    <input class="mobile-search" type="text" placeholder="Search">
+                </div>
+            </div>
+            <div class="nav-links non-mobile">
+                <ul>
+                    <li>NEWS</li>
+                    <li>EDUCATION</li>
+                    <li>CONDITIONS</li>
+                </ul>
+                <input class="search" type="text" placeholder="Search">
+            </div>
+        </nav>
+        <hr>
+        
+        <div class="banner">
+            <div class="banner-text">
+                <h5>Live Medical Crossfire</h5>
+                <h1>An American Journal of Managed Care Medical Crossfire:</h1>
+                <h2>Advancements in the Treatment of Migranes</h2>
+                <hr>
+                <p>Monday, October 16, 2017 | 6:00 PM CT
+                <br>
+                Sheraton Dallas Hotel | Dallas, Texas</p>
+            </div>
+        </div>
+    </header>
+    <div id="page" class="container">
+        <div class="left-column">
+            <div id="quicklinks" class="section-box quicklinks">
+                <div class="left-column-title">Quick Links</div>
+                <ul>
+                    <li><a href="#">Videos</a></li>
+                    <li><a href="#">Clinical Resources</a></li>
+                    <li><a href="#">Conference Coverage</a></li>
+                    <li><a href="#">Contributors</a></li>
+                </ul>
+            </div><br>
+
+            <div id="topics" class="section-box quicklinks">
+                <div class="left-column-title">Topic</div>
+                <ul>
+                    <li><a href="#">Allergies</a></li>
+                    <li><a href="#">Anaphylaxis</a></li>
+                    <li><a href="#">Asthma</a></li>
+                    <li><a href="#">Blood Disorders</a></li>
+                    <li><a href="#">Cardiology</a></li>
+                    <li><a href="#">Cold and Flu</a></li>
+                    <li><a href="#">COPD</a></li>
+                    <li><a href="#">Dermatology</a></li>
+                    <li><a href="#">Diabetes</a></li>
+                    <li><a href="#">Depression</a></li>
+                </ul>
+            </div>
+        </div>
+<div class="dashboard">
+    <div class="progress">
+        <canvas id="myChart"></canvas>
+        <div id="dashboard-saved-courses" class="section-box quicklinks">
+            <div class="dashboard-title">Saved Courses</div>
+                <div class="dashboard-saved-courses">
+                    <h5>Identifying Health-System Pharmacist’s Role in Improving Pulmonary Arterial Hypertension and Transitions of Care</h5>
+                    <div class="dashboard-saved-courses-status">
+                        <span class="dashboard-percent-completed">40% Completed</span>
+                        <span class="expiration-date">Expires April 25, 2018</span>
+                    </div>
+                    <hr>
+                </div>
+                <div class="dashboard-saved-courses">
+                    <h5>Identifying Health-System Pharmacist’s Role in Improving Pulmonary Arterial Hypertension and Transitions of Care</h5>
+                    <div class="dashboard-saved-courses-status">
+                        <span class="dashboard-percent-completed">60% Completed</span>
+                        <span class="expiration-date">Expires April 25, 2018</span>
+                    </div>
+                    <hr>
+                </div>
+                <div class="dashboard-saved-courses">
+                    <h5>Identifying Health-System Pharmacist’s Role in Improving Pulmonary Arterial Hypertension and Transitions of Care</h5>
+                    <div class="dashboard-saved-courses-status">
+                        <span class="dashboard-percent-completed">0% Completed</span>
+                        <span class="expiration-date">Expires April 25, 2018</span>
+                    </div>
+                    <hr>
+                </div>
+                <div class="dashboard-saved-courses">
+                    <h5>Identifying Health-System Pharmacist’s Role in Improving Pulmonary Arterial Hypertension and Transitions of Care</h5>
+                    <div class="dashboard-saved-courses-status">
+                        <span class="dashboard-percent-completed">10% Completed</span>
+                        <span class="expiration-date">Expires April 25, 2018</span>
+                    </div>
+                    <hr>
+                </div>
+
+            </div>
+    </div>
+    <div class="dashboard-recommended">
+       <canvas id="globalChart"></canvas> 
+        <div id="dashboard-activities">
+            <div class="dashboard-title">Recommended</div>
+            <div class="dashboard-activities-card">
+                <div class ="dashboard-activities-description">
+                    <div class="dashboard-activities-text">
+                        <h5>Understanding the Clinical and Economic Data of Botulinum Toxin in Chronic Migraines</h5>
+                        <p>Examine evidence-based strategies to help patients with migraine, and demonstrate onabotulinumtoxin. A injection's potential benefits and appropriate use in patients with chronic migraine. Identify collaborative management plans with prescribers who wish to use onabotulinumtoxinA, emphasizing patient education.</p>
+                    </div>
+                    <div class="dashboard-activities-upc">
+                        <p>Expires: Sep 6,2018 | Credits: 1.00 | UAN: 0290-000-17-133-H01-P</p>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <div class="dashboard-activities-card">
+                <div class ="dashboard-activities-description">
+                    <div class="dashboard-activities-text">
+                        <h5>Understanding the Clinical and Economic Data of Botulinum Toxin in Chronic Migraines</h5>
+                        <p>Examine evidence-based strategies to help patients with migraine, and demonstrate onabotulinumtoxin. A injection's potential benefits and appropriate use in patients with chronic migraine. Identify collaborative management plans with prescribers who wish to use onabotulinumtoxinA, emphasizing patient education.</p>
+                    </div>
+                    <div class="dashboard-activities-upc">
+                        <p>Expires: Sep 6,2018 | Credits: 1.00 | UAN: 0290-000-17-133-H01-P</p>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <div class="dashboard-activities-card">
+                <div class ="dashboard-activities-description">
+                    <div class="dashboard-activities-text">
+                        <h5>Understanding the Clinical and Economic Data of Botulinum Toxin in Chronic Migraines</h5>
+                        <p>Examine evidence-based strategies to help patients with migraine, and demonstrate onabotulinumtoxin. A injection's potential benefits and appropriate use in patients with chronic migraine. Identify collaborative management plans with prescribers who wish to use onabotulinumtoxinA, emphasizing patient education.</p>
+                    </div>
+                    <div class="dashboard-activities-upc">
+                        <p>Expires: Sep 6,2018 | Credits: 1.00 | UAN: 0290-000-17-133-H01-P</p>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <div class="dashboard-activities-card">
+                <div class ="dashboard-activities-description">
+                    <div class="dashboard-activities-text">
+                        <h5>Understanding the Clinical and Economic Data of Botulinum Toxin in Chronic Migraines</h5>
+                        <p>Examine evidence-based strategies to help patients with migraine, and demonstrate onabotulinumtoxin. A injection's potential benefits and appropriate use in patients with chronic migraine. Identify collaborative management plans with prescribers who wish to use onabotulinumtoxinA, emphasizing patient education.</p>
+                    </div>
+                    <div class="dashboard-activities-upc">
+                        <p>Expires: Sep 6,2018 | Credits: 1.00 | UAN: 0290-000-17-133-H01-P</p>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <div class="dashboard-activities-card">
+                <div class ="dashboard-activities-description">
+                    <div class="dashboard-activities-text">
+                        <h5>Understanding the Clinical and Economic Data of Botulinum Toxin in Chronic Migraines</h5>
+                        <p>Examine evidence-based strategies to help patients with migraine, and demonstrate onabotulinumtoxin. A injection's potential benefits and appropriate use in patients with chronic migraine. Identify collaborative management plans with prescribers who wish to use onabotulinumtoxinA, emphasizing patient education.</p>
+                    </div>
+                    <div class="dashboard-activities-upc">
+                        <p>Expires: Sep 6,2018 | Credits: 1.00 | UAN: 0290-000-17-133-H01-P</p>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+</div>
+
+<div class="right-column">
+            <img src="http://ptce.s3.amazonaws.com/_media/_image/webinar-link.png" alt="">
+            <img src="http://ptce.s3.amazonaws.com/_media/_image/webinar-link1.png" alt="">
+            <img src="http://ptce.s3.amazonaws.com/_media/_image/webinar-link2.png" alt="">
+        </div>
+
+<script>
+new Chart(document.getElementById("myChart"),{"type":"doughnut","data":{"labels":["Incomplete","Complete"],"datasets":[{"label":"My First Dataset","data":[23,77],"backgroundColor":["rgb(255, 99, 132)","rgb(54, 162, 235)"]}]}});
+
+
+var atx = document.getElementById("globalChart").getContext('2d');
+var globalChart = new Chart(atx, {
+    type: 'line',
+    data: {
+        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+        datasets: [{
+            label: 'Monthly Activities',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        },
+        {
+            label: 'Average Monthly Activities',
+            data: [1, 9, 13, 15, 4, 3],
+            backgroundColor: [
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255,99,132,1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
+});
+</script>
