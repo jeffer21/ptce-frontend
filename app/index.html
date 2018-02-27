@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<!--<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no;">-->
+	<meta name="HandheldFriendly" content="True">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	<!-- js -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script async src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script src="nav.js"></script>
+	<script src="navMenu.js"></script>
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" media="screen, print" href="style.css"/>
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald:400" rel="stylesheet">
+	<!-- favicon -->
+	<link rel="shortcut icon" href="/_media/_image/favicon.ico" type="image/x-icon" />
+
+</head>
+<body>
+	<header id="global-nav">
+		<div id="mobile-menu" class="mobile">
+			<div id="quicklinks" class="section-box quicklinks">
+			<div class="mobile-menu-title">
+				<div class="mobile-title">Menu</div>
+				<div class="mobile-menu-close" onclick="mobileNav()">close</div>
+			</div>
+				<ul>
+					<li><a href="#">NEWS</a></li>
+					<li><a href="event.html">EDUCATION</a></li>
+					<li><a href="landing.html">CONDITIONS</a></li>
+				</ul>
+			</div>
+			<div id="login" class="section-box">
+			<div class="left-column-title">Login/Sign Up</div>
+			<form>
+				<input class ="input-username" type="text" name="username" placeholder="Username"><br>
+				<input class ="input-password" type="text" name="password" placeholder="Password"><br>
+				<div class="forgot-pw"><a href="#">forgot password?</a></div> <br>
+
+				<input class="sign-in btn" type="submit" value="Sign In">
+				<button class="sign-up btn">Sign Up</button>
+			</form>
+			</div><br>
+
+			<div id="quicklinks" class="section-box quicklinks">
+			<div class="left-column-title">Quick Links</div>
+			<ul>
+				<li><a href="#">Videos</a></li>
+				<li><a href="#">Clinical Resources</a></li>
+				<li><a href="#">Conference Coverage</a></li>
+				<li><a href="#">Contributors</a></li>
+			</ul>
+			</div><br>
+
+			<div id="topics" class="section-box quicklinks">
+			<div class="left-column-title">Topic</div>
+			<ul>
+				<li><a href="#">Allergies</a></li>
+				<li><a href="#">Anaphylaxis</a></li>
+				<li><a href="#">Asthma</a></li>
+				<li><a href="#">Blood Disorders</a></li>
+				<li><a href="#">Cardiology</a></li>
+				<li><a href="#">Cold and Flu</a></li>
+				<li><a href="#">COPD</a></li>
+				<li><a href="#">Dermatology</a></li>
+				<li><a href="#">Diabetes</a></li>
+				<li><a href="#">Depression</a></li>
+			</ul>
+			</div>
+		</div>
+		<nav>
+			<div class="mobile-nav mobile">
+				<div class="mobile-menu" onclick="mobileNav()">
+					<i class="fas fa-bars"></i>
+				</div>
+				<div class="logo"><img src="http://ptce.s3.amazonaws.com/_media/_image/ptce-logo.png" alt=""></div>
+			</div>
+			<div class="logo non-mobile"><img src="http://ptce.s3.amazonaws.com/_media/_image/ptce-logo.png" alt=""></div>
+			<div class="mobile-search-container">
+				<div class="nav-links-mobile mobile" onclick="mobileSearch()">
+					<i class="fas fa-search"></i>
+				</div>
+				<div id="mobile-search" class="mobile">
+					<input class="mobile-search" type="text" placeholder="Search">
+				</div>
+			</div>
+			<div class="nav-links non-mobile">
+				<ul>
+					<li>NEWS</li>
+					<li>EDUCATION</li>
+					<li>CONDITIONS</li>
+				</ul>
+				<input class="search" type="text" placeholder="Search">
+			</div>
+		</nav>
+		<hr>
+		
+		<div class="banner">
+			<div class="banner-text">
+				<h3>Live Medical Crossfire</h3>
+				<h1>An American Journal of Managed Care Medical Crossfire:</h1>
+				<h2>Advancements in the Treatment of Migranes</h2>
+				<hr>
+				<p>Monday, October 16, 2017 | 6:00 PM CT
+				<br>
+				Sheraton Dallas Hotel | Dallas, Texas</p>
+			</div>
+		</div>
+	</header>
+	<div id="page" class="container">
+
+		<div class="left-column">
+			<div id="login" class="section-box">
+				<div class="left-column-title">Login/Sign Up</div>
+				<form>
+					<input class ="input-username" type="text" name="username" placeholder="Username"><br>
+					<input class ="input-password" type="text" name="password" placeholder="Password"><br>
+					<div class="forgot-pw"><a href="#">forgot password?</a></div> <br>
+
+					<input class="sign-in btn" type="submit" value="Sign In">
+					<button class="sign-up btn">Sign Up</button>
+				</form>
+			</div><br>
+
+			<div id="quicklinks" class="section-box quicklinks">
+				<div class="left-column-title">Quick Links</div>
+				<ul>
+					<li><a href="#">Videos</a></li>
+					<li><a href="#">Clinical Resources</a></li>
+					<li><a href="#">Conference Coverage</a></li>
+					<li><a href="#">Contributors</a></li>
+				</ul>
+			</div><br>
+
+			<div id="topics" class="section-box quicklinks">
+				<div class="left-column-title">Topic</div>
+				<ul>
+					<li><a href="#">Allergies</a></li>
+					<li><a href="#">Anaphylaxis</a></li>
+					<li><a href="#">Asthma</a></li>
+					<li><a href="#">Blood Disorders</a></li>
+					<li><a href="#">Cardiology</a></li>
+					<li><a href="#">Cold and Flu</a></li>
+					<li><a href="#">COPD</a></li>
+					<li><a href="#">Dermatology</a></li>
+					<li><a href="#">Diabetes</a></li>
+					<li><a href="#">Depression</a></li>
+				</ul>
+			</div>
+
+		</div>
+		<div class="main-content">
+			<div id="activities">
+				<div class="main-body-title">Activities</div>
+				<div class="activities-filter">
+					<div class="sort-left">
+					<select name="Profession" id="" class="sort">
+							<option value="">Profession</option>
+							<option value="">Option 2</option>
+							<option value="">Option 3</option>
+							<option value="">Option 4</option>
+						</select>
+						<select name="Topic" id="" class="sort">
+							<option value="">Topic</option>
+							<option value="">Option 2</option>
+							<option value="">Option 3</option>
+							<option value="">Option 4</option>
+						</select>
+					</div>
+					<div class="sort-right">
+						<span>Sort by:</span>
+						<select name="" id="" class="sort">
+							<option value="">Popularity</option>
+							<option value="">Option 2</option>
+							<option value="">Option 3</option>
+							<option value="">Option 4</option>
+
+						</select>
+					</div>
+				</div>
+
+				<div class="activities-card">
+					<div class="activities-img">
+						<img src="http://ptce.s3.amazonaws.com/_media/_image/Intersection-1.png">
+					</div>
+					<div class ="activities-description">
+						<div class="activities-text">
+							<h3>Understanding the Clinical and Economic Data of Botulinum Toxin in Chronic Migraines</h3>
+							<p>Examine evidence-based strategies to help patients with migraine, and demonstrate onabotulinumtoxin. A injection's potential benefits and appropriate use in patients with chronic migraine. Identify collaborative management plans with prescribers who wish to use onabotulinumtoxinA, emphasizing patient education.</p>
+						</div>
+						<div class="activities-upc">
+							<p>Expires: Sep 6,2018 | Credits: 1.00 | UAN: 0290-000-17-133-H01-P</p>
+						</div>
+					</div>
+				</div>
+				<div class="activities-card">
+					<div class="activities-img">
+						<img src="http://ptce.s3.amazonaws.com/_media/_image/Intersection-9.png">
+					</div>
+					<div class ="activities-description">
+						<div class="activities-text">
+							<h3>The Expanding Health Benefits of Prebiotics and Probiotics</h3>
+							<p>LAs our understanding of the complex relationship between the gut microbiota and human health evolves, the number of potential uses for probiotics grows. In order to help patients decide if a probiotic will be beneficial, pharmacists need to know the evidence supporting the use of probiotics for a plethora of indications. They must also provide advice on choosing products, including how to avoid quality issues such as contamination, sub-potency, and stability. This activity will provide pharmacists with an approach to evaluating these issues.</p>
+						</div>
+						<div class="activities-upc">
+							<p>Expires: Sep 6,2018 | Credits: 1.00 | UAN: 0290-000-17-133-H01-P</p>
+						</div>
+					</div>
+				</div>
+				<div class="activities-card">
+					<div class="activities-img">
+						<img src="http://ptce.s3.amazonaws.com/_media/_image/Intersection-1.png">
+					</div>
+					<div class ="activities-description">
+						<div class="activities-text">
+							<h3>Test Articles</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eleifend, nisl nec pulvinar consequat, neque tortor commodo libero, a finibus massa tellus ac erat. Ut sed iaculis velit. Cras ultricies risus id mauris facilisis, vitae tempus quam convallis. Phasellus sagittis venenatis tortor, at viverra mi gravida sit amet. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque dignissim eu neque eu pretium. Donec sit amet risus elementum, lobortis massa at, luctus justo. Vestibulum in urna vehicula, tempus nunc et, viverra nibh.</p>
+						</div>
+						<div class="activities-upc">
+							<p>Expires: Sep 6,2018 | Credits: 1.00 | UAN: 0290-000-17-133-H01-P</p>
+						</div>
+					</div>
+				</div>
+				<div class="activities-card">
+					<div class="activities-img">
+						<img src="http://ptce.s3.amazonaws.com/_media/_image/Intersection-9.png">
+					</div>
+					<div class ="activities-description">
+						<div class="activities-text">
+							<h3>Test Articles</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eleifend, nisl nec pulvinar consequat, neque tortor commodo libero, a finibus massa tellus ac erat. Ut sed iaculis velit. Cras ultricies risus id mauris facilisis, vitae tempus quam convallis. Phasellus sagittis venenatis tortor, at viverra mi gravida sit amet. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque dignissim eu neque eu pretium. Donec sit amet risus elementum, lobortis massa at, luctus justo. Vestibulum in urna vehicula, tempus nunc et, viverra nibh.</p>
+						</div>
+	                    <div class="activities-upc">
+	                        <p>Expires: Sep 6,2018 | Credits: 1.00 | UAN: 0290-000-17-133-H01-P</p>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	    <div class="right-column">
+	        <img src="http://ptce.s3.amazonaws.com/_media/_image/webinar-link.png" alt="">
+	        <img src="http://ptce.s3.amazonaws.com/_media/_image/webinar-link1.png" alt="">
+	        <img src="http://ptce.s3.amazonaws.com/_media/_image/webinar-link2.png" alt="">
+	    </div>
+	</div>
+</body>
+</html>
