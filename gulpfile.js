@@ -31,7 +31,6 @@ gulp.task('default', function(){
 
 gulp.task('html', function () {
   gulp.src('app/*.html')
-    .pipe(gulp.dest('app/'))
     .pipe(livereload());
 });
 
