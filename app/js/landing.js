@@ -164,7 +164,7 @@ function quiz2 () {
                     document.getElementById("video-container").style.display = "none";
 
                     var zy = myQuestions[x].question.toString();
-                    document.getElementById("question-container").innerHTML += '<div><p>' + zy + '</p>' +
+                    document.getElementById("question-container").innerHTML += '<div class="question"><h3>' + zy + '</h3>' +
                         '<form id="question-form"><input type="radio" name="question" value="'+ myQuestions[x].answers.a + '">' + myQuestions[x].answers.a + '<br><input type="radio" name="question" value="'+ myQuestions[x].answers.b + '">' + myQuestions[x].answers.b + '<br><input type="radio" name="question" value="'+ myQuestions[x].answers.c + '">' +
                         myQuestions[x].answers.c + '<br>' + '</form>' +
                         '</div>';
@@ -341,6 +341,7 @@ function landing_previous() {
 
 function activityStart () {
     document.getElementById("myModal").style.display = "none";
+    document.getElementById("activity-page").classList.remove("blur");
     document.getElementById('Next').style.visibility = 'visible';
     console.log("The current page number is: " + currentQuizPage);
     quiz2();

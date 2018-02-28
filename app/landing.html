@@ -24,56 +24,282 @@
     <link rel="shortcut icon" href="/_media/_image/favicon.ico" type="image/x-icon" />
 
 </head>
+<body>
+	<header id="global-nav" class="scrolled-nav">
+		<div id="mobile-menu" class="mobile">
+			<div id="quicklinks" class="section-box quicklinks">
+			<div class="mobile-menu-title">
+				<div class="mobile-title">Menu</div>
+				<div class="mobile-menu-close" onclick="mobileNav()">close</div>
+			</div>
+				<ul>
+					<li><a href="pt/index.html">NEWS</a></li>
+					<li><a href="#">EDUCATION</a></li>
+					<li><a href="#">CONDITIONS</a></li>
+				</ul>
+			</div>
+			<div id="saved-courses" class="section-box quicklinks">
+			<div class="left-column-title">Saved Courses</div>
+				<div class="saved-courses">
+					<h5>Identifying Health-System Pharmacist’s Role in Improving Pulmonary Arterial Hypertension and Transitions of Care</h5>
+					<div class="saved-courses-status">
+						<span class="percent-completed">40% Completed</span>
+						<span class="expiration-date">Expires April 25, 2018</span>
+					</div>
+					<hr>
+				</div>
+				<div class="saved-courses">
+					<h5>Identifying Health-System Pharmacist’s Role in Improving Pulmonary Arterial Hypertension and Transitions of Care</h5>
+					<div class="saved-courses-status">
+						<span class="percent-completed">60% Completed</span>
+						<span class="expiration-date">Expires April 25, 2018</span>
+					</div>
+					<hr>
+				</div>
+				<div class="saved-courses">
+					<h5>Identifying Health-System Pharmacist’s Role in Improving Pulmonary Arterial Hypertension and Transitions of Care</h5>
+					<div class="saved-courses-status">
+						<span class="percent-completed">0% Completed</span>
+						<span class="expiration-date">Expires April 25, 2018</span>
+					</div>
+					<hr>
+				</div>
+				<div class="saved-courses">
+					<h5>Identifying Health-System Pharmacist’s Role in Improving Pulmonary Arterial Hypertension and Transitions of Care</h5>
+					<div class="saved-courses-status">
+						<span class="percent-completed">10% Completed</span>
+						<span class="expiration-date">Expires April 25, 2018</span>
+					</div>
+					<hr>
+				</div>
 
-<div class="container">
+			</div>
+			<div id="quicklinks" class="section-box quicklinks">
+			<div class="left-column-title">Quick Links</div>
+			<ul>
+				<li><a href="#">Videos</a></li>
+				<li><a href="#">Clinical Resources</a></li>
+				<li><a href="#">Conference Coverage</a></li>
+				<li><a href="#">Contributors</a></li>
+			</ul>
+			</div><br>
+
+			<div id="quicklinks" class="section-box quicklinks">
+			<div class="left-column-title">Quick Links</div>
+			<ul>
+				<li><a href="#">Videos</a></li>
+				<li><a href="#">Clinical Resources</a></li>
+				<li><a href="#">Conference Coverage</a></li>
+				<li><a href="#">Contributors</a></li>
+			</ul>
+			</div><br>
+
+			<div id="topics" class="section-box quicklinks">
+			<div class="left-column-title">Topic</div>
+			<ul>
+				<li><a href="#">Allergies</a></li>
+				<li><a href="#">Anaphylaxis</a></li>
+				<li><a href="#">Asthma</a></li>
+				<li><a href="#">Blood Disorders</a></li>
+				<li><a href="#">Cardiology</a></li>
+				<li><a href="#">Cold and Flu</a></li>
+				<li><a href="#">COPD</a></li>
+				<li><a href="#">Dermatology</a></li>
+				<li><a href="#">Diabetes</a></li>
+				<li><a href="#">Depression</a></li>
+			</ul>
+			</div>
+		</div>
+		<nav>
+			<div class="mobile-nav mobile">
+				<div class="mobile-menu" onclick="mobileNav()">
+					<i class="fas fa-bars"></i>
+				</div>
+				<div class="logo"><a href="index-signedin.html"><img src="http://ptce.s3.amazonaws.com/_media/_image/ptce-logo.png" alt=""></a></div>
+			</div>
+			<div class="logo non-mobile"><a href="index-signedin.html"><img src="http://ptce.s3.amazonaws.com/_media/_image/ptce-logo.png" alt=""></a></div>
+			<div class="mobile-search-container">
+				<div class="nav-links-mobile mobile" onclick="mobileSearch()">
+					<i class="fas fa-search"></i>
+				</div>
+				<div id="mobile-search" class="mobile">
+					<input class="mobile-search" type="text" placeholder="Search">
+				</div>
+			</div>
+			<div class="nav-links non-mobile">
+				<ul>
+					<li><a href="pt/index.html">NEWS</a></li>
+					<li>EDUCATION</li>
+					<li>CONDITIONS</li>
+				</ul>
+				<input class="search" type="text" placeholder="Search">
+			</div>
+		</nav>
+		<hr>
+		
+		<div class="banner">
+			<div class="banner-text">
+				<h3>Live Medical Crossfire</h3>
+				<h1>An American Journal of Managed Care Medical Crossfire:</h1>
+				<h2>Advancements in the Treatment of Migranes</h2>
+				<hr>
+				<p>Monday, October 16, 2017 | 6:00 PM CT
+				<br>
+				Sheraton Dallas Hotel | Dallas, Texas</p>
+			</div>
+		</div>
+	</header>
     <div id="myModal" class="modal">
-
         <div class="modal-content">
+        	<span class="close activity-close" onclick="activityStart();">&times;</span>
             <div class="modal-header">
-                <button style="background-color: blue;color: white; margin-top: 15px" onclick="activityStart();">Start Activity</button>
-                <span class="close" onclick="activityStart();">&times;</span>
+                <button class ="btn activity-start" onclick="activityStart();">START ACTIVITY</button>
             </div>
 
-            <div style="overflow-y: scroll; height: 300px; padding: 20px">
-                <h3>On-demand CE-accredited Webinar</h3>
-                <div style="width: 100%; height: 50px; padding-bottom: 25px">
-                    <p style="width: 50%; float: left">Expires     01-24-2019<br>Credits     1.00<br>UAN  0290-0000-17-197-H01-P</p>
-
-                    <p style="width: 50%; float: right">Supported by an educational grant from <br>Actelion Pharmaceuticals US, Inc.</p>
+            <div class="activity-information">
+                <div class="display-flex">
+                	<div class="activity-details">
+                		<h5>On-demand CE-accredited Webinar</h5>
+	                    <p class="red"><b>Expires</b> 01-24-2019</p>
+	                    <p><b>Credits</b> 1.00</p>
+	                    <p><b>UAN</b>  0290-0000-17-197-H01-P</p>
+					</div>
+					<div class="activity-funded">
+	                    <p>Supported by an educational grant from</p>
+	                    <h5>Actelion Pharmaceuticals US, Inc.</h5>
+                	</div>
+				</div>
+				<div class="activity-overview">
+					<h2>Activity Overview</h2>
+					<p>This webinar will focus on pulmonary arterial hypertension (PAH) as a disease state as well as treatment guidelines and goals, which require a multidisciplinary approach from healthcare personnel. Health-system pharmacists’ involvement can enhance patient education and improve medication use as patients with PAH commonly use multiple treatments for the disease including supportive therapy, which significantly increases the chances of adverse effects and drug interactions. In addition, the options for treating symptoms of PAH have increased with several different drug classes and delivery routes available. This activity will highlight the information on the various therapeutic options to keep hospital pharmacists updated in order to provide the appropriate clinical guidance to the healthcare team.</p>
+				</div>
+				<hr>
+				<div class="activity-overview">
+					<h2>Education Objectives</h2>
+					<p>Upon completion of this educational activity, participants will be able to:</p>
+					<ul>
+			          <li>Examine the etiology and pathophysiology of pulmonary arterial hypertension (PAH)</li>
+			          <li>Distinguish the clinical data associated with the pharmacologic treatments approved for PAH</li>
+			          <li>Explore best practices regarding therapy safety and optimization to keep patients with PAH at functional class I or II</li>
+			          <li>Identify methods for an interdisciplinary approach including pulmonary hypertension specialists and pharmacists</li>
+					</ul>
+					<div class="activity-ptce">			
+	                <img src="http://ptce.s3.amazonaws.com/_media/_image/acpe.png" alt="">		
+	                <p>			
+	             		Pharmacy Times Continuing Education™ is accredited by the Accreditation Council for Pharmacy Education (ACPE) as a provider of continuing pharmacy education. <b>This activity is approved for 1.5 contact hours (0.15 CEUs) under the ACPE universal activity number 0290-0000-18-028-L01-P. The activity is available for CE credit through March 18, 2018.</b>		
+		
+	                </p>			
+		            </div>	
+				</div>
+                <hr>
+                <div class="activity-overviewr">
+                	<h2>Faculty Presenter</h2>
+                	<div class="faculty-containter">
+	                	<div class="activity-faculty">
+	                		<img src="http://ptce.s3.amazonaws.com/_media/_image/profile-img.png" alt="">
+	                		<div class="faculty-profile">
+	                			<p>Amy L. Dzierba, PharmD, FCCM, FCCP, BCPS, BCCCP<br>
+								Clinical Pharmacist<br>
+								Department of Pharmacy<br>
+								New York-Presbyterian Hospital<br>
+								Columbia University Irving Medical Center<br>
+								New York, New York</p>
+	                		</div>
+	                	</div>
+	                	<div class="activity-faculty">
+	                		<img src="http://ptce.s3.amazonaws.com/_media/_image/profile-img.png" alt="">
+	                		<div class="faculty-profile">
+	                			<p>Amy L. Dzierba, PharmD, FCCM, FCCP, BCPS, BCCCP<br>
+								Clinical Pharmacist<br>
+								Department of Pharmacy<br>
+								New York-Presbyterian Hospital<br>
+								Columbia University Irving Medical Center<br>
+								New York, New York</p>
+	                		</div>
+	                	</div>
+                	</div>
                 </div>
+                <hr>
+				<div class="activity-overview">
+					<h2>About This CE Activity</h2>
+					<table>
+						<tr>
+							<td>Target Audience:</td>
+							<td>Health-system pharmacists, specialty pharmacists, infusion pharmacists</td>
+						</tr>
+						<tr>
+							<td>Type of Activity:</td>
+							<td>Application</td>
+						</tr>
+						<tr>
+							<td>Length of Webinar:</td>
+							<td>1 Hour</td>
+						</tr>
+						<tr>
+							<td>Release Date:</td>
+							<td>January 24, 2018</td>
+						</tr>
+						<tr>
+							<td>Expiration Date:</td>
+							<td>January 24, 2019</td>
+						</tr>
+					</table>
+				</div>
+				<hr>
+				<div class="activity-overview">
+					<h2>Instructions for Completing the Activity and Receiving CPE Credit</h2>
+					<p>To receive CPE credit, participants must complete the pretest, view the webinar in its entirety, complete the posttest with a score of 70% or better before the activity expires, and complete the online activity evaluation. After successful completion of the online posttest and activity evaluation, your credit will be uploaded to CPE Monitor. You may view your credit within 48 hours at www.mycpemonitor.net. All participants must request credit before January 24, 2019. CE credit will not be issued after this date.</p>
+				</div>
+				<hr>
+				<div class="activity-overview">
+					<h2>Disclosures</h2>
+					<p>The following contributors have no relevant financial relationships with commercial interests to disclose:</p>
+ 					<h4>Faculty</h4> 
+					<p>Amy L. Dzierba, PharmD, FCCM, FCCP, BCPS, BCCCP</p>
+ 					<h4>Pharmacy Times Continuing Education™</h4>
+ 					<p>Planning Staff: David Heckard; Maryjo Dixon, RPh; Dipti Desai, PharmD, RPh; Olivia Mastrodonato; and Sue Pordon
+ 					<br><br>
+					Anonymous peer reviewers have been used as part of content validation and conflict resolution. The peer reviewers have no relevant financial relationships with commercial interests to disclose. 
+ 					<br><br>
+					The content of this webinar may include information regarding the use of products that may be inconsistent with, or outside the approved labeling for, these products in the United States. Pharmacists should note that the use of these products outside current approved labeling is considered experimental and are advised to consult the prescribing information for these products.</p>
+				</div>
+				<hr>
+				<div class="activity-overview">
+					<h2>Activity Disclaimer</h2>
+					<p>Pharmacy Times Continuing Education™ (PTCE) strives to provide the highest level of service. However, unforeseen circumstances may necessitate the rescheduling or cancellation of live events, including, but not limited to, webinars, hosted by PTCE. PTCE reserves the right to cancel an event without notice. PTCE will not be responsible for any expenditure incurred due to the cancellation.</p>
+				</div>
+				<hr>
+				<div class="activity-overview">
+					<h2>Educational Disclaimer</h2>
+					<p>Continuing education activities are offered solely for educational purposes and do not constitute any form of professional advice or referral. Discussions concerning drugs, dosages, and procedures may reflect the clinical experience of the author(s) or they may be derived from the professional literature or other sources and may suggest uses that are investigational in nature and not approved labeling or indications. Participants are encouraged to refer to primary references or full prescribing information resources.</p>
+				</div>
+				<hr>
+				<div class="activity-overview">
+					<h2>System Requirements</h2>
+					<div class="system-requirements">
+						<div class="windows">
+							<img src="http://ptce.s3.amazonaws.com/_media/_image/windows.png" alt="">
+							<p>Windows 7,Vista, XP,<br>
+							2003 Server or 2000</p>
 
-                <p style="padding-bottom: 10px; border-bottom: solid blue 1px">This webinar will focus on pulmonary arterial hypertension (PAH) as a disease state as well as treatment guidelines and goals, which require a
-                    multidisciplinary approach from healthcare personnel. Health-system pharmacists’ involvement can enhance patient education and improve
-                    medication use as patients with PAH commonly use multiple treatments for the disease including supportive therapy, which significantly increases
-                    the chances of adverse effects and drug interactions. In addition, the options for treating symptoms of PAH have increased with several different
-                    drug classes and delivery routes available. This activity will highlight the information on the various therapeutic options to keep hospital
-                    pharmacists updated in order to provide the appropriate clinical guidance to the healthcare team.</p>
-
-                <p style="padding-bottom: 10px; border-bottom: solid blue 1px">Upon completion of this educational activity, participants will be able to:<br>
-                    - Examine the etiology and pathophysiology of pulmonary arterial hypertension (PAH)<br>
-                    - Distinguish the clinical data associated with the pharmacologic treatments approved for PAH<br>
-                    - Explore best practices regarding therapy safety and optimization to keep patients with PAH at functional class I or II<br>
-                    - Identify methods for an interdisciplinary approach including pulmonary hypertension specialists and pharmacists</p>
-
-                <h2>Faculty Presenter</h2>
-                <p style="padding-bottom: 10px; border-bottom: solid blue 1px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus orci nisl, interdum et mollis eget, feugiat in libero.
-                    Pellentesque accumsan, dui aliquam rutrum sodales, ante purus rhoncus lectus, et finibus tortor lorem id orci. Integer eleifend felis eu metus varius, nec mollis massa consequat.
-                    Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras nec enim massa. Aenean rutrum orci eget semper convallis. Vivamus elementum nisi nec nisi vulputate porta.
-                    Ut mollis, est rhoncus finibus hendrerit, lorem nisi mollis risus, et condimentum ligula velit ac sem. Integer sed ante nibh. Etiam malesuada quis ipsum varius dignissim.</p>
-                <p style="padding-bottom: 10px; border-bottom: solid blue 1px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus orci nisl, interdum et mollis eget, feugiat in libero.
-                    Pellentesque accumsan, dui aliquam rutrum sodales, ante purus rhoncus lectus, et finibus tortor lorem id orci. Integer eleifend felis eu metus varius, nec mollis massa consequat.
-                    Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras nec enim massa. Aenean rutrum orci eget semper convallis. Vivamus elementum nisi nec nisi vulputate porta.
-                    Ut mollis, est rhoncus finibus hendrerit, lorem nisi mollis risus, et condimentum ligula velit ac sem. Integer sed ante nibh. Etiam malesuada quis ipsum varius dignissim.</p>
-                <p style="padding-bottom: 10px; border-bottom: solid blue 1px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus orci nisl, interdum et mollis eget, feugiat in libero.
-                    Pellentesque accumsan, dui aliquam rutrum sodales, ante purus rhoncus lectus, et finibus tortor lorem id orci. Integer eleifend felis eu metus varius, nec mollis massa consequat.
-                    Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras nec enim massa. Aenean rutrum orci eget semper convallis. Vivamus elementum nisi nec nisi vulputate porta.
-                    Ut mollis, est rhoncus finibus hendrerit, lorem nisi mollis risus, et condimentum ligula velit ac sem. Integer sed ante nibh. Etiam malesuada quis ipsum varius dignissim.</p>
+						</div>
+						<div class="mac">
+							<img src="http://ptce.s3.amazonaws.com/_media/_image/mac.png" alt="">
+							<p>Mac OS X 10.4.11 (Tiger) or newer</p>
+						</div>
+					</div>
+				</div>
+				<div class="activity-bottom">
+					<p>For questions about this Internet CPE activity, please contact: ceinfo@pharmacytimes.com<br>
+					Privacy Policy and Terms of Use information: https://www.pharmacytimes.org/terms-conditions
+					</p>
+				</div>
             </div>
         </div>
-
     </div>
+<div class="container">
 
-    <div class="main-content">
+    <div id="activity-page" class="main-content blur">
         <div id="landing-test">
             <div style=""><h1>Identifying Health-System Pharmacist's Role in Improving Pulmonary Arterial Hypertension and Transitions of Care</h1></div>
         </div>
@@ -107,3 +333,5 @@
     </div>
 
 </div>
+</body>
+</html>
