@@ -165,8 +165,7 @@ function quiz2 () {
 
                     var zy = myQuestions[x].question.toString();
                     document.getElementById("question-container").innerHTML += '<div class="question"><h3>' + zy + '</h3>' +
-                        '<form id="question-form"><input type="radio" name="question" value="'+ myQuestions[x].answers.a + '">' + myQuestions[x].answers.a + '<br><input type="radio" name="question" value="'+ myQuestions[x].answers.b + '">' + myQuestions[x].answers.b + '<br><input type="radio" name="question" value="'+ myQuestions[x].answers.c + '">' +
-                        myQuestions[x].answers.c + '<br>' + '</form>' +
+                        '<form id="question-form"><input id="'+ myQuestions[x].answers.a +'" type="radio" name="question" class="activity-question" value="'+ myQuestions[x].answers.a + '"><label for="' + myQuestions[x].answers.a + '">'+ myQuestions[x].answers.a + '</label><br><input id="'+ myQuestions[x].answers.b +'" type="radio" name="question" class="activity-question" value="'+ myQuestions[x].answers.b + '"><label for="' + myQuestions[x].answers.b + '">'+ myQuestions[x].answers.b + '</label><br><input id="'+ myQuestions[x].answers.c +'" type="radio" name="question" class="activity-question" value="'+ myQuestions[x].answers.c + '"><label for="' + myQuestions[x].answers.c + '">'+ myQuestions[x].answers.c + '</label><br></form>' +
                         '</div>';
 
                 } else if (myQuestions[x].questionType == "video") {
@@ -341,6 +340,7 @@ function landing_previous() {
 
 function activityStart () {
     document.getElementById("myModal").style.display = "none";
+    document.getElementById("global-nav").classList.remove("blur");
     document.getElementById("activity-page").classList.remove("blur");
     document.getElementById('Next').style.visibility = 'visible';
     console.log("The current page number is: " + currentQuizPage);
