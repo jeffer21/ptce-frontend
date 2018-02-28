@@ -339,6 +339,7 @@ function landing_previous() {
 
 function activityStart () {
     document.getElementById("myModal").style.display = "none";
+    document.getElementById("activity-page").classList.remove("blur");
     document.getElementById('Next').style.visibility = 'visible';
     console.log("The current page number is: " + currentQuizPage);
     quiz2();

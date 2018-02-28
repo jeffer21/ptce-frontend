@@ -21,7 +21,13 @@ body{
 .indent-only{
 	list-style: none;
 }
-
+.display-flex{
+	display: flex;
+	justify-content:space-between;
+}
+.red{
+	color:$red;
+}
 @media screen and (max-width:1064px){
 	
 .non-mobile{
