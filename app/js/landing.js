@@ -1,7 +1,7 @@
 /**
  * Created by AlanJoseph on 2/21/2018.
  */
-const myQuestions = [
+var myQuestions = [
     {
         page: 1,
         questionType: "question",
@@ -55,90 +55,260 @@ const myQuestions = [
 ];
 
 var currentQuizPage = 1;
+//
+//function quiz() {
+//    //document.getElementById("quiz-start").style.display = "none";
+//    var countP1 = 0;
+//    var whatislastpage = myQuestions[5].page;
+//    var whatisfirstpage = myQuestions[0].page;
+//
+//
+//    for(var x = 0; x < myQuestions.length; x++) {
+//        //console.log("This is the question type: " + myQuestions[x].questionType + " and this is the number in the array: " + x);
+//        if(myQuestions[x].page == 1) {
+//            countP1 += 1;
+//        }
+//
+//        if(currentQuizPage == 1) {
+//            if(myQuestions[x].page == currentQuizPage) {
+//                for (var y = 0; y <= countP1; y++) {
+//                    document.getElementById("question-container").style.display= "block";
+//                    document.getElementById("info-container").style.display = "none";
+//                    document.getElementById("video-container").style.display = "none";
+//
+//                    var y = myQuestions[x].question.toString();
+//                    document.getElementById("question-container").innerHTML += '<div><p>' + y + '</p>' +
+//                        '<form><input type="radio" name="question' + x + '">' + myQuestions[x].answers.a + '<br><input type="radio" name="question' + x + '">' + myQuestions[x].answers.b + '<br><input type="radio" name="question' + x + '">' +
+//                        myQuestions[x].answers.c + '<br>' + '</form>' +
+//                        '</div>';
+//                }
+//            }
+//
+//            if(whatisfirstpage == currentQuizPage) {
+//                document.getElementById('Previous').style.visibility = 'hidden';
+//                document.getElementById('landing-Submit').style.visibility = 'hidden';
+//                document.getElementById('Next').style.float = 'right';
+//                document.getElementById('Next').style.display = 'block';
+//            }
+//        } else if (currentQuizPage == 2) {
+//            //STILL NEEDS WORK AS OF 2/23/2018
+//            document.getElementById("info-container").style.display= "none";
+//            document.getElementById("question-container").style.display= "none";
+//            document.getElementById("video-container").style.display = "block";
+//
+//            if(currentQuizPage != whatislastpage) {
+//                document.getElementById('Previous').style.visibility = 'visible';
+//                document.getElementById('Previous').style.float = 'left';
+//                document.getElementById('landing-Submit').style.visibility = 'hidden';
+//                document.getElementById('Next').style.float = 'right';
+//                document.getElementById('Next').style.display = 'block';
+//            }
+//
+//            document.getElementById("video-container").innerHTML = '<div> <iframe width="100%" height="500px" src="' + myQuestions[3].dataLink + '"></iframe> </div><br>';
+//
+//        } else if (currentQuizPage == 3) {
+//            document.getElementById("info-container").style.display = "block";
+//            document.getElementById("question-container").style.display= "none";
+//            document.getElementById("video-container").style.display= "none";
+//
+//
+//            document.getElementById("info-container").innerHTML = '<div> <p>' + myQuestions[4].data + '</p></div> <br>';
+//
+//            if(currentQuizPage != whatislastpage) {
+//                document.getElementById('Previous').style.visibility = 'visible';
+//                document.getElementById('Previous').style.float = 'left';
+//                document.getElementById('landing-Submit').style.visibility = 'hidden';
+//                document.getElementById('Next').style.float = 'right';
+//                document.getElementById('Next').style.display = 'block';
+//            }
+//        } else if (currentQuizPage == 4) {
+//            if(myQuestions[x].page == currentQuizPage) {
+//                document.getElementById("info-container").style.display= "none";
+//                document.getElementById("question-container").style.display= "none";
+//                document.getElementById("video-container").style.display = "block";
+//
+//                document.getElementById("video-container").innerHTML = '<div> <iframe width="100%" height="500px" src="' + myQuestions[5].dataLink + '"></iframe> </div><br>';
+//                break;
+//            }
+//
+//            if(whatislastpage == currentQuizPage) {
+//                document.getElementById('Previous').style.visibility = 'visible';
+//                document.getElementById('landing-Submit').style.visibility = 'visible';
+//                document.getElementById('landing-Submit').style.float = 'right';
+//                document.getElementById('Previous').style.float = 'left';
+//                document.getElementById('Next').style.display = 'none';
+//            }
+//        }
+//    }
+//}
 
+var qCount = 0;
+for(var counting =0; counting < myQuestions.length; counting++) {
+    if (myQuestions[counting].questionType == "question") {
+        qCount+= 1;
+        console.log('This is question count: ' + qCount);
+    }
+}
 
-function quiz() {
-    //document.getElementById("quiz-start").style.display = "none";
-    var countP1 = 0;
-    var whatislastpage = myQuestions[5].page;
-    var whatisfirstpage = myQuestions[0].page;
-
+function quiz2 () {
+    var lastpage = myQuestions[5].page;
+    var firstpage = myQuestions[0].page;
 
     for(var x = 0; x < myQuestions.length; x++) {
-        //console.log("This is the question type: " + myQuestions[x].questionType + " and this is the number in the array: " + x);
-        if(myQuestions[x].page == 1) {
-            countP1 += 1;
-        }
 
         if(currentQuizPage == 1) {
-            if(myQuestions[x].page == currentQuizPage) {
-                if (myQuestions[x].questionType == 'question') {
-                    for (var y = 0; y <= countP1; y++) {
-                        document.getElementById("question-container").style.display= "block";
-                        document.getElementById("info-container").style.visibility = "hidden";
-                        document.getElementById("video-container").style.visibility = "hidden";
+            if (myQuestions[x].page == currentQuizPage) {
+                if(myQuestions[x].questionType == "question") {
+                    document.getElementById("question-container").style.display = "block";
+                    document.getElementById("info-container").style.display = "none";
+                    document.getElementById("video-container").style.display = "none";
 
+                    var zy = myQuestions[x].question.toString();
+                    document.getElementById("question-container").innerHTML += '<div><p>' + zy + '</p>' +
+                        '<form id="question-form"><input type="radio" name="question" value="'+ myQuestions[x].answers.a + '">' + myQuestions[x].answers.a + '<br><input type="radio" name="question" value="'+ myQuestions[x].answers.b + '">' + myQuestions[x].answers.b + '<br><input type="radio" name="question" value="'+ myQuestions[x].answers.c + '">' +
+                        myQuestions[x].answers.c + '<br>' + '</form>' +
+                        '</div>';
+
+                } else if (myQuestions[x].questionType == "video") {
+                    document.getElementById("info-container").style.display = "none";
+                    document.getElementById("question-container").style.display = "none";
+                    document.getElementById("video-container").style.display = "block";
+
+                    document.getElementById("video-container").innerHTML = '<div> <iframe width="100%" height="500px" src="' + myQuestions[x].dataLink + '"></iframe> </div><br>';
+
+
+                } else if(myQuestions[x].questionType == "info") {
+                    document.getElementById("info-container").style.display = "block";
+                    document.getElementById("question-container").style.display = "none";
+                    document.getElementById("video-container").style.display = "none";
+
+                    document.getElementById("info-container").innerHTML = '<div> <p>' + myQuestions[x].data + '</p></div> <br>';
+
+                }
+            }
+
+            if(firstpage == currentQuizPage) {
+                document.getElementById('Previous').style.visibility = 'hidden';
+                document.getElementById('landing-Submit').style.visibility = 'hidden';
+                document.getElementById('Next').style.float = 'right';
+                document.getElementById('Next').style.display = 'block';
+            }
+
+
+        } else if(currentQuizPage == 2) {
+            if (myQuestions[x].page == currentQuizPage) {
+                if(myQuestions[x].questionType == "question") {
+                    document.getElementById("question-container").style.display = "block";
+                    document.getElementById("info-container").style.display = "none";
+                    document.getElementById("video-container").style.display = "none";
+
+                    for(var qIter =0; qIter < qCount; qIter++) {
                         var y = myQuestions[x].question.toString();
                         document.getElementById("question-container").innerHTML += '<div><p>' + y + '</p>' +
                             '<form><input type="radio" name="question' + x + '">' + myQuestions[x].answers.a + '<br><input type="radio" name="question' + x + '">' + myQuestions[x].answers.b + '<br><input type="radio" name="question' + x + '">' +
                             myQuestions[x].answers.c + '<br>' + '</form>' +
                             '</div>';
                     }
-                } else {
-                    continue;
+
+                } else if (myQuestions[x].questionType == "video") {
+                    document.getElementById("info-container").style.display = "none";
+                    document.getElementById("question-container").style.display = "none";
+                    document.getElementById("video-container").style.display = "block";
+
+                    document.getElementById("video-container").innerHTML = '<div> <iframe width="100%" height="500px" src="' + myQuestions[x].dataLink + '"></iframe> </div><br>';
+
+
+                } else if(myQuestions[x].questionType == "info") {
+                    document.getElementById("info-container").style.display = "block";
+                    document.getElementById("question-container").style.display = "none";
+                    document.getElementById("video-container").style.display = "none";
+
+                    document.getElementById("info-container").innerHTML = '<div> <p>' + myQuestions[x].data + '</p></div> <br>';
+
                 }
             }
 
-            if(whatisfirstpage == currentQuizPage) {
-                document.getElementById('Previous').style.visibility = 'hidden';
-                document.getElementById('landing-Submit').style.visibility = 'hidden';
-                document.getElementById('Next').style.float = 'right';
-                document.getElementById('Next').style.display = 'block';
-            }
-        } else if (currentQuizPage == 2) {
-            //STILL NEEDS WORK AS OF 2/23/2018
-            document.getElementById("info-container").style.display= "none";
-            document.getElementById("question-container").style.display= "none";
-            document.getElementById("video-container").style.visibility = "visible";
-
-            if(currentQuizPage != whatislastpage) {
+            if(currentQuizPage != lastpage) {
                 document.getElementById('Previous').style.visibility = 'visible';
                 document.getElementById('Previous').style.float = 'left';
                 document.getElementById('landing-Submit').style.visibility = 'hidden';
                 document.getElementById('Next').style.float = 'right';
                 document.getElementById('Next').style.display = 'block';
             }
+        } else if(currentQuizPage == 3) {
+            if (myQuestions[x].page == currentQuizPage) {
+                if(myQuestions[x].questionType == "question") {
+                    document.getElementById("question-container").style.display = "block";
+                    document.getElementById("info-container").style.display = "none";
+                    document.getElementById("video-container").style.display = "none";
 
-            document.getElementById("video-container").innerHTML = '<div> <iframe width="100%" height="500px" src="' + myQuestions[3].dataLink + '"></iframe> </div><br>';
+                    for(var qIter =0; qIter < qCount; qIter++) {
+                        var y = myQuestions[x].question.toString();
+                        document.getElementById("question-container").innerHTML += '<div><p>' + y + '</p>' +
+                            '<form><input type="radio" name="question' + x + '">' + myQuestions[x].answers.a + '<br><input type="radio" name="question' + x + '">' + myQuestions[x].answers.b + '<br><input type="radio" name="question' + x + '">' +
+                            myQuestions[x].answers.c + '<br>' + '</form>' +
+                            '</div>';
+                    }
 
-        } else if (currentQuizPage == 3) {
-            document.getElementById("info-container").style.display = "block";
-            document.getElementById("info-container").style.visibility = "visible";
-            document.getElementById("question-container").style.display= "none";
-            document.getElementById("video-container").style.display= "none";
+                } else if (myQuestions[x].questionType == "video") {
+                    document.getElementById("info-container").style.display = "none";
+                    document.getElementById("question-container").style.display = "none";
+                    document.getElementById("video-container").style.display = "block";
+
+                    document.getElementById("video-container").innerHTML = '<div> <iframe width="100%" height="500px" src="' + myQuestions[x].dataLink + '"></iframe> </div><br>';
 
 
-            document.getElementById("info-container").innerHTML = '<div> <p>' + myQuestions[4].data + '</p></div> <br>';
+                } else if(myQuestions[x].questionType == "info") {
+                    document.getElementById("info-container").style.display = "block";
+                    document.getElementById("question-container").style.display = "none";
+                    document.getElementById("video-container").style.display = "none";
 
-            if(currentQuizPage != whatislastpage) {
+                    document.getElementById("info-container").innerHTML = '<div> <p>' + myQuestions[x].data + '</p></div> <br>';
+
+                }
+            }
+
+            if(currentQuizPage != lastpage) {
                 document.getElementById('Previous').style.visibility = 'visible';
                 document.getElementById('Previous').style.float = 'left';
                 document.getElementById('landing-Submit').style.visibility = 'hidden';
                 document.getElementById('Next').style.float = 'right';
                 document.getElementById('Next').style.display = 'block';
             }
-        } else if (currentQuizPage == 4) {
-            if(myQuestions[x].page == currentQuizPage) {
-                document.getElementById("info-container").style.display= "none";
-                document.getElementById("question-container").style.display= "none";
-                document.getElementById("video-container").style.visibility = "visible";
-                document.getElementById("video-container").style.display = "block";
+        } else if(currentQuizPage == 4) {
+            if (myQuestions[x].page == currentQuizPage) {
+                if(myQuestions[x].questionType == "question") {
+                    document.getElementById("question-container").style.display = "block";
+                    document.getElementById("info-container").style.display = "none";
+                    document.getElementById("video-container").style.display = "none";
 
-                document.getElementById("video-container").innerHTML = '<div> <iframe width="100%" height="500px" src="' + myQuestions[5].dataLink + '"></iframe> </div><br>';
-                break;
+                    for(var qIter =0; qIter < qCount; qIter++) {
+                        var y = myQuestions[x].question.toString();
+                        document.getElementById("question-container").innerHTML += '<div><p>' + y + '</p>' +
+                            '<form><input type="radio" name="question' + x + '">' + myQuestions[x].answers.a + '<br><input type="radio" name="question' + x + '">' + myQuestions[x].answers.b + '<br><input type="radio" name="question' + x + '">' +
+                            myQuestions[x].answers.c + '<br>' + '</form>' +
+                            '</div>';
+                    }
+
+                } else if (myQuestions[x].questionType == "video") {
+                    document.getElementById("info-container").style.display = "none";
+                    document.getElementById("question-container").style.display = "none";
+                    document.getElementById("video-container").style.display = "block";
+
+                    document.getElementById("video-container").innerHTML = '<div> <iframe width="100%" height="500px" src="' + myQuestions[x].dataLink + '"></iframe> </div><br>';
+
+
+                } else if(myQuestions[x].questionType == "info") {
+                    document.getElementById("info-container").style.display = "block";
+                    document.getElementById("question-container").style.display = "none";
+                    document.getElementById("video-container").style.display = "none";
+
+                    document.getElementById("info-container").innerHTML = '<div> <p>' + myQuestions[x].data + '</p></div> <br>';
+
+                }
             }
 
-            if(whatislastpage == currentQuizPage) {
+            if(lastpage == currentQuizPage) {
                 document.getElementById('Previous').style.visibility = 'visible';
                 document.getElementById('landing-Submit').style.visibility = 'visible';
                 document.getElementById('landing-Submit').style.float = 'right';
@@ -147,30 +317,48 @@ function quiz() {
             }
         }
     }
+
+
 }
 
 function landing_next() {
-    var chosen =[];
+    //var chosen = activityQuestions(document.getElementById('question-form'), 'question');
+    //console.log('This is what was chosen: ' + chosen);
     currentQuizPage += 1;
     console.log("The current page number is: " + currentQuizPage);
-    quiz();
+    quiz2();
 }
 
 function landing_previous() {
     var chosen =[];
     currentQuizPage -= 1;
     console.log("The current page number is: " + currentQuizPage);
-    quiz();
+    document.getElementById("question-container").innerHTML = '';
+    quiz2();
 }
 
 function activityStart () {
     document.getElementById("myModal").style.display = "none";
     document.getElementById('Next').style.visibility = 'visible';
     console.log("The current page number is: " + currentQuizPage);
-    quiz();
+    quiz2();
 }
 
 function activityEnd () {
     window.location.replace("results.html");
 }
 
+function activityQuestions (form, name) {
+    var val;
+    // get list of radio buttons with specified name
+    var radios = form.elements[name];
+
+    // loop through list of radio buttons
+    for (var i=0, len=radios.length; i<len; i++) {
+        if ( radios[i].checked ) { // radio checked?
+            val = radios[i].value; // if so, hold its value in val
+            //break; // and break out of for loop
+        }
+    }
+    return val; // return value of checked radio or undefined if none checked
+}
