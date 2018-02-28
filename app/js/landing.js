@@ -324,17 +324,19 @@ function quiz2 () {
 function landing_next() {
     //var chosen = activityQuestions(document.getElementById('question-form'), 'question');
     //console.log('This is what was chosen: ' + chosen);
+    activityQuestions();
     currentQuizPage += 1;
     console.log("The current page number is: " + currentQuizPage);
     quiz2();
 }
 
 function landing_previous() {
-    var chosen =[];
+    //var chosen =[];
     currentQuizPage -= 1;
     console.log("The current page number is: " + currentQuizPage);
     document.getElementById("question-container").innerHTML = '';
     quiz2();
+    setActivityQuestions();
 }
 
 function activityStart () {
@@ -348,17 +350,35 @@ function activityEnd () {
     window.location.replace("results.html");
 }
 
-function activityQuestions (form, name) {
-    var val;
-    // get list of radio buttons with specified name
-    var radios = form.elements[name];
+var arr = [];
 
-    // loop through list of radio buttons
-    for (var i=0, len=radios.length; i<len; i++) {
-        if ( radios[i].checked ) { // radio checked?
-            val = radios[i].value; // if so, hold its value in val
-            //break; // and break out of for loop
-        }
+function activityQuestions () {
+    $('input[type="radio"][name="question"]:checked').each(function(){
+        arr.push($(this).val());  //push values in array
+    });
+
+    for(var tt = 0; tt < arr.length; tt++) {
+        console.log('This is what is in radio: ' + arr[tt]);
     }
-    return val; // return value of checked radio or undefined if none checked
+
+    console.log('The length of the array is: ' + arr.length);
+
+}
+
+function setActivityQuestions () {
+    var loc = arr;
+
+    //for(var saq = 0; saq < loc.length; saq++) {}
+    $('input[type="radio"][name="question"]').each(function () {
+        for(var saq = 0; saq < loc.length; saq++) {
+            if (document.getElementsByName("question")[saq].value == loc[saq]) {
+                console.log('Array Value matches question value!');
+                $('input[type=radio][value=' + document.getElementsByName("question")[saq].value + ']').attr('checked', true);
+                //break;
+
+            } else {
+                console.log('NO MATCH!!!');
+            }
+        }
+    });
 }
