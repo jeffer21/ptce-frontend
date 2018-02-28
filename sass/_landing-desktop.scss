@@ -24,7 +24,7 @@
 	position:fixed;
 	z-index:554545454;
 	background-color:rgba(0,0,0, .5);
-
+	top:0;
 }
 
 .modal-content {
@@ -131,4 +131,27 @@
 }
 .activity-overview{
 	margin:30px 0;
+}
+.activity-btn{
+	padding:10px 30px;
+	background-color: $primary;
+	border-radius: 5px;
+	color:$white;
+}
+.activity-question{
+	margin:20px;
+
+}
+#question-form{
+	label{
+		padding:20px 50px;
+
+	}
+	input {
+    	visibility:hidden;
+	}
+	input:checked + label {
+    background: $primary;
+    color:$white;
+}
 }
