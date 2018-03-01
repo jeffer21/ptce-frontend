@@ -2,14 +2,10 @@ function mobileNav(){
 	var x = document.getElementById('mobile-menu').style.left;
 	if (x === "" || x ==="-100%"){
 		document.getElementById('mobile-menu').style.left = 0;
-		document.getElementById('mobile-menu-container').style.display = "block";
-		document.getElementById('page').classList.add("blur");
-
 
 	}else{
 		document.getElementById('mobile-menu').style.left = "-100%";
-		document.getElementById('page').classList.remove("blur");
-		document.getElementById('mobile-menu-container').style.display = "none";
+
 	}
 	
 
