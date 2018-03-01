@@ -476,3 +476,17 @@ function progressCheck () {
     elem.style.width = width + '%';
     progressInfo.innerHTML = width + '%';
 }
+
+$(document).ready(function(){
+    if (document.referrer == 'http://localhost:8080/results.html') {
+        document.getElementById("myModal").style.display = "none";
+        document.getElementById("global-nav").classList.remove("blur");
+        document.getElementById("activity-page").classList.remove("blur");
+        document.getElementById('Next').style.visibility = 'visible';
+        document.getElementById('myProgress').style.visibility = 'visible';
+
+        isFinalExam = true;
+
+        quiz2();
+    }
+});
