@@ -7,9 +7,9 @@ var myQuestions = [
         questionType: "question",
         question: "Who is the strongest?",
         answers: {
-            a: "Superman",
-            b: "The Terminator",
-            c: "Waluigi, obviously"
+            a: "A. Superman",
+            b: "B. The Terminator",
+            c: "C. Waluigi, obviously"
         },
         correctAnswer: "c"
     },
@@ -18,9 +18,9 @@ var myQuestions = [
         questionType: "question",
         question: "What is the best site ever created?",
         answers: {
-            a: "SitePoint",
-            b: "CrunchyRoll",
-            c: "Trick question; they're both the best"
+            a: "A. SitePoint",
+            b: "B. CrunchyRoll",
+            c: "C. Trick question; they're both the best"
         },
         correctAnswer: "c"
     },
@@ -29,10 +29,10 @@ var myQuestions = [
         questionType: "question",
         question: "Where is Waldo really?",
         answers: {
-            a: "Antarctica",
-            b: "Exploring the Pacific Ocean",
-            c: "Sitting in a tree",
-            d: "Minding his own business, so stop asking"
+            a: "A. Antarctica",
+            b: "B. Exploring the Pacific Ocean",
+            c: "C. Sitting in a tree",
+            d: "D. Minding his own business, so stop asking"
         },
         correctAnswer: "d"
     },
@@ -164,7 +164,7 @@ function quiz2 () {
                     document.getElementById("video-container").style.display = "none";
 
                     var zy = myQuestions[x].question.toString();
-                    document.getElementById("question-container").innerHTML += '<div class="question"><h3>' + zy + '</h3>' +
+                    document.getElementById("question-container").innerHTML += '<div class="question"><h2>Question</h2><h3>' + zy + '</h3>' +
                         '<form id="question-form"><input id="'+ myQuestions[x].answers.a +'" type="radio" name="question" class="activity-question" value="'+ myQuestions[x].answers.a + '"><label for="' + myQuestions[x].answers.a + '">'+ myQuestions[x].answers.a + '</label><br><input id="'+ myQuestions[x].answers.b +'" type="radio" name="question" class="activity-question" value="'+ myQuestions[x].answers.b + '"><label for="' + myQuestions[x].answers.b + '">'+ myQuestions[x].answers.b + '</label><br><input id="'+ myQuestions[x].answers.c +'" type="radio" name="question" class="activity-question" value="'+ myQuestions[x].answers.c + '"><label for="' + myQuestions[x].answers.c + '">'+ myQuestions[x].answers.c + '</label><br></form>' +
                         '</div>';
 

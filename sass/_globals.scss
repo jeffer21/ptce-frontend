@@ -1,4 +1,7 @@
 /* Global Start */
+select{
+	font-size: 1em;
+}
 .whitebg{
 	background-color: $white;
 }
@@ -33,6 +36,9 @@ body{
 }
 .red{
 	color:$red;
+}
+.display-none{
+	display: none !important;
 }
 @media screen and (max-width:1064px){
 	
