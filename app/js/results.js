@@ -5,5 +5,5 @@ $( document ).ready(function() {
     setTimeout(function(){
         console.log('Bye Results Page!');
         window.location.replace('index.html');
-    }, 3000);
+    }, 30000);
 });

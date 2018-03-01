@@ -118,11 +118,16 @@ body{
 }
 
 .sort-left{
-	width:40%;
+	width:70%;
+	font-size: .9em;
 }
 .sort-right{
-	width:50%;
+	span{
+		display: none;
+	}
+	width:30%;
 	text-align: right;
+	font-size: .9em;
 }
 
 .activities-card{

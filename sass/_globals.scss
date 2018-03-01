@@ -1,4 +1,7 @@
 /* Global Start */
+select{
+	font-size: 1em;
+}
 .whitebg{
 	background-color: $white;
 }
@@ -6,6 +9,12 @@
   border:0px;
   border-radius: 5px;
 
+}
+a{
+	text-decoration: none;
+}
+a:visited{
+	color:$text;
 }
 body{
   padding: 0;
@@ -21,7 +30,16 @@ body{
 .indent-only{
 	list-style: none;
 }
-
+.display-flex{
+	display: flex;
+	justify-content:space-between;
+}
+.red{
+	color:$red;
+}
+.display-none{
+	display: none !important;
+}
 @media screen and (max-width:1064px){
 	
 .non-mobile{
