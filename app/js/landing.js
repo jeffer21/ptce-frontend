@@ -186,6 +186,8 @@ function quiz2 () {
                 }
             }
 
+            progressCheck();
+
             if(firstpage == currentQuizPage) {
                 document.getElementById('Previous').style.visibility = 'hidden';
                 document.getElementById('landing-Submit').style.visibility = 'hidden';
@@ -227,6 +229,8 @@ function quiz2 () {
                 }
             }
 
+            progressCheck();
+
             if(currentQuizPage != lastpage) {
                 document.getElementById('Previous').style.visibility = 'visible';
                 document.getElementById('Previous').style.float = 'left';
@@ -266,6 +270,8 @@ function quiz2 () {
 
                 }
             }
+
+            progressCheck();
 
             if(currentQuizPage != lastpage) {
                 document.getElementById('Previous').style.visibility = 'visible';
@@ -307,6 +313,8 @@ function quiz2 () {
                 }
             }
 
+            progressCheck();
+
             if(lastpage == currentQuizPage) {
                 document.getElementById('Previous').style.visibility = 'visible';
                 document.getElementById('landing-Submit').style.visibility = 'visible';
@@ -343,6 +351,7 @@ function activityStart () {
     document.getElementById("global-nav").classList.remove("blur");
     document.getElementById("activity-page").classList.remove("blur");
     document.getElementById('Next').style.visibility = 'visible';
+    document.getElementById('myProgress').style.visibility = 'visible';
     console.log("The current page number is: " + currentQuizPage);
     quiz2();
 }
@@ -382,4 +391,18 @@ function setActivityQuestions () {
             }
         }
     });
+}
+
+var totalQuestions = 4;
+
+function progressCheck () {
+
+    var elem = document.getElementById("myBar");
+    var progressInfo = document.getElementById("progressText");
+    var width = 1;
+    //var id = setInterval(frame, 10);
+
+    width = Math.round(100 * currentQuizPage / totalQuestions);
+    elem.style.width = width + '%';
+    progressInfo.innerHTML = width + '%';
 }
