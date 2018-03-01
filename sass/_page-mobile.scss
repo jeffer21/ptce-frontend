@@ -134,14 +134,10 @@ body{
 }
 
 .sort-left{
-	width:60%;
+	display:none;
 }
 .sort-right{
-	width:40%;
-	text-align: right;
-	span{
-		display:none;
-	}
+	display:none;
 }
 
 .activities-card{

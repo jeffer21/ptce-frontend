@@ -9,18 +9,43 @@
 		font-size:2em;
 		color:$text;
 	}
+
+}
+#mobile-menu-container{
+	width:100%;
+	height:100vh;
+	position:fixed;
+	background-color: rgba(0,0,0, .7);
+	display:none;
+	z-index:0;
+	-webkit-transition: all .5s;
+    transition: all .5s;
+}
+.mobile-menu-close{
+	position: absolute;
+	top:0;
+	right:0;
+}
+.mobile-title{
+	color:$primary;
+	padding:10px 20px; 
 }
 #mobile-menu{
 	position:fixed;
-	width:100%;
-	top:40px;
+	width:50%;
+	top:45px;
 	left:-100%;
 	-webkit-transition: all 1s;
     transition: all 1s;
-    background-color:$lighter-grey;
+    background-color:$lightest-blue;
     height: 100vh;
-    overflow: scroll;
-
+    overflow: auto;
+    z-index:10000;
+	.quicklinks{
+		ul{
+			margin-top: 0;
+		}
+	}
 }
 .nav-links-mobile{
 	display:flex;
