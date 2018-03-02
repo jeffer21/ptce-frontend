@@ -5,26 +5,11 @@ var myQuestions = [
     {
         page: 0,
         questionType: "question",
-        question: "Who is your employer?",
-        answers: {
-            a: "MJH Associates",
-            b: "Google",
-            c: "Onclive"
-        }
-    },
-    {
-        page: 0,
-        questionType: "question-fill",
-        question: "What is your zip code?"
-    },
-    {
-        page: 1,
-        questionType: "question",
         question: "Who is the strongest?",
         answers: {
-            a: "Superman",
-            b: "The Terminator",
-            c: "Waluigi, obviously"
+            a: "A. Superman",
+            b: "B. The Terminator",
+            c: "C. Waluigi, obviously"
         },
         correctAnswer: "c"
     },
@@ -33,60 +18,26 @@ var myQuestions = [
         questionType: "question",
         question: "What is the best site ever created?",
         answers: {
-            a: "SitePoint",
-            b: "CrunchyRoll",
-            c: "Trick question; they're both the best"
+            a: "A. SitePoint",
+            b: "B. CrunchyRoll",
+            c: "C. Trick question; they're both the best"
         },
         correctAnswer: "c"
     },
     {
-        page: 1,
+        page: 2,
         questionType: "question",
         question: "Where is Waldo really?",
         answers: {
-            a: "Antarctica",
-            b: "Exploring the Pacific Ocean",
-            c: "Sitting in a tree",
-            d: "Minding his own business, so stop asking"
+            a: "A. Antarctica",
+            b: "B. Exploring the Pacific Ocean",
+            c: "C. Sitting in a tree",
+            d: "D. Minding his own business, so stop asking"
         },
         correctAnswer: "d"
     },
     {
         page: 2,
-        questionType: "video",
-        dataLink: "https://www.youtube.com/embed/KrB-ASnFMVQ"
-    },
-    {
-        page: 3,
-        questionType: "info",
-        data: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi odio elit, congue quis leo sed, sodales pharetra leo. Maecenas commodo eu mi vel vehicula. Praesent lacinia ipsum odio. Donec quis hendrerit dolor. Vivamus quam nisl, dictum nec nulla quis, facilisis tempus eros. Quisque velit nulla, mattis sollicitudin velit at, varius viverra lorem. Nulla facilisi. Mauris interdum venenatis ligula et fringilla. Phasellus efficitur purus risus, faucibus vulputate odio rutrum et. Maecenas at placerat est. Fusce felis metus, imperdiet nec massa sagittis, viverra placerat orci. Pellentesque pellentesque tincidunt turpis, vel dictum nisi condimentum ac. Nunc egestas ante nunc, ac vulputate leo venenatis et. Etiam ut nisi pretium, vehicula erat vitae, aliquet est. Vestibulum rutrum suscipit fermentum."
-    },
-    {
-        page: 4,
-        questionType: "video",
-        dataLink: "https://www.youtube.com/embed/e3Ze62AL9r0"
-    }
-
-];
-
-var finalexam = [
-    {
-        page: 0,
-        questionType: "question",
-        question: "Who is your employer?",
-        answers: {
-            a: "MJH Associates",
-            b: "Google",
-            c: "Onclive"
-        }
-    },
-    {
-        page: 0,
-        questionType: "question-fill",
-        question: "What is your zip code?"
-    },
-    {
-        page: 1,
         questionType: "question",
         question: "Who is the best digimon?",
         answers: {
@@ -97,7 +48,7 @@ var finalexam = [
         correctAnswer: "c"
     },
     {
-        page: 1,
+        page: 2,
         questionType: "question",
         question: "What is the best video games series?",
         answers: {
@@ -108,7 +59,7 @@ var finalexam = [
         correctAnswer: "a"
     },
     {
-        page: 1,
+        page: 3,
         questionType: "question",
         question: "Where is the paradise of Otakus?",
         answers: {
@@ -118,21 +69,41 @@ var finalexam = [
         },
         correctAnswer: "c"
     },
+   
     {
-        page: 2,
-        questionType: "video",
-        dataLink: "https://www.youtube.com/embed/ib_1ATfr8wM"
+        page: 3,
+        questionType: "question",
+        question: "Who is the best digimon?",
+        answers: {
+            a: "Agumon",
+            b: "Angewoman",
+            c: "Black WarGreyMon"
+        },
+        correctAnswer: "c"
     },
     {
         page: 3,
-        questionType: "info",
-        data: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi odio elit, congue quis leo sed, sodales pharetra leo. Maecenas commodo eu mi vel vehicula. Praesent lacinia ipsum odio. Donec quis hendrerit dolor. Vivamus quam nisl, dictum nec nulla quis, facilisis tempus eros. Quisque velit nulla, mattis sollicitudin velit at, varius viverra lorem. Nulla facilisi. Mauris interdum venenatis ligula et fringilla. Phasellus efficitur purus risus, faucibus vulputate odio rutrum et. Maecenas at placerat est. Fusce felis metus, imperdiet nec massa sagittis, viverra placerat orci. Pellentesque pellentesque tincidunt turpis, vel dictum nisi condimentum ac. Nunc egestas ante nunc, ac vulputate leo venenatis et. Etiam ut nisi pretium, vehicula erat vitae, aliquet est. Vestibulum rutrum suscipit fermentum."
+        questionType: "question",
+        question: "What is the best video games series?",
+        answers: {
+            a: "Final Fantasy",
+            b: "Megaman",
+            c: "Spyro"
+        },
+        correctAnswer: "a"
     },
     {
         page: 4,
-        questionType: "video",
-        dataLink: "https://www.youtube.com/embed/glXgSSOKlls"
+        questionType: "question",
+        question: "Where is the paradise of Otakus?",
+        answers: {
+            a: "Tokyo",
+            b: "Chiba",
+            c: "None of the above"
+        },
+        correctAnswer: "c"
     }
+    
 
 ];
 
@@ -171,7 +142,7 @@ function quiz2 () {
                     document.getElementById("video-container").style.display = "none";
 
                     var zy = myQuestions[x].question.toString();
-                    document.getElementById("question-container").innerHTML += '<div class="question"><h3>' + zy + '</h3>' +
+                    document.getElementById("question-container").innerHTML += '<div class="question"><h2>Question</h2><h3>' + zy + '</h3>' +
                         '<form id="question-form"><input id="'+ myQuestions[x].answers.a +'" type="radio" name="question" class="activity-question" value="'+ myQuestions[x].answers.a + '"><label for="' + myQuestions[x].answers.a + '">'+ myQuestions[x].answers.a + '</label><br><input id="'+ myQuestions[x].answers.b +'" type="radio" name="question" class="activity-question" value="'+ myQuestions[x].answers.b + '"><label for="' + myQuestions[x].answers.b + '">'+ myQuestions[x].answers.b + '</label><br><input id="'+ myQuestions[x].answers.c +'" type="radio" name="question" class="activity-question" value="'+ myQuestions[x].answers.c + '"><label for="' + myQuestions[x].answers.c + '">'+ myQuestions[x].answers.c + '</label><br></form>' +
                         '</div>';
 
@@ -181,7 +152,7 @@ function quiz2 () {
                     document.getElementById("video-container").style.display = "none";
 
                     var zy = myQuestions[x].question.toString();
-                    document.getElementById("question-container").innerHTML += '<div class="question"><h3>' + zy + '</h3>' +
+                    document.getElementById("question-container").innerHTML += '<div><p>' + zy + '</p>' +
                         '<form id="question-form"><input type="number" name="zipcode" ><br> </form>' +
                         '</div>';
 
@@ -473,5 +444,5 @@ function progressCheck () {
 
     width = Math.round(100 * currentQuizPage / (totalQuestions));
     elem.style.width = width + '%';
-    progressInfo.innerHTML = currentQuizPage + ' of ' + totalQuestions;
+    progressInfo.innerHTML = width + '%';
 }

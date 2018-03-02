@@ -16,7 +16,7 @@
 
 }
 .event-column{
-	width: 70%;
+	width: 100%;
 	padding-right:40px;
 }
 .event-information{
@@ -81,7 +81,7 @@
 .text-box{
 	display: flex;
 	justify-content:space-between;
-	align-items:flex-start;
+	align-items:center;
 
 }
 .left-events{
@@ -111,4 +111,9 @@
 	border:1px solid $white;
 	border-radius: 5px;
 	color:$white;
+	font-size: 1.5em;
+}
+.eventbanner-btn:hover{
+	color:$primary;
+	background-color: $white;
 }

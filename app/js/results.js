@@ -6,11 +6,11 @@ $( document ).ready(function() {
     setTimeout(function(){
         console.log('Bye Results Page!');
 
-        if(amount == 0) {
-            amount++;
-            window.location.replace('landing.html');
-        } else {
-            window.location.replace('index.html');
-        }
-    }, 3000);
+        // if(amount == 0) {
+            // amount++;
+            // window.location.replace('landing.html');
+        // } else {
+            window.location.replace('index-signedin.html');
+        // }
+    }, 20000);
 });
