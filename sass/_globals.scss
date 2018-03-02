@@ -87,6 +87,19 @@ body{
 	padding:30px;
 	margin-bottom:60px;
 }
+.dot{
+  height: 10px;
+  width: 10px;
+  background-color: $white;
+  border-radius: 50%;
+  display: inline-block;
+}
+.blue{
+	border:5px solid $primary;
+}
+.green{
+	border:5px solid $secondary;
+}
 // body {
 //   font-family: 'Roboto', sans-serif;
 //   font-size: 14px;
